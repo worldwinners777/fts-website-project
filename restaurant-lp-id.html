@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<!-- SEO -->
+<title>Pemasaran Restoran | Buat Restoran Anda Ramai Sejak Sebelum Grand Opening | FTS</title>
+<meta name="description" content="Layanan pemasaran khusus untuk restoran, kafe, dan F&B di Indonesia. Optimasi Instagram, Google Maps, dan website — semua diarahkan ke chat WhatsApp & reservasi nyata. Analisis gratis hanya 60 detik.">
+<meta name="keywords" content="pemasaran restoran, promosi kafe, SEO restoran, Google Maps restoran, Instagram restoran, strategi grand opening, pemasaran F&B, digital marketing restoran, marketing kafe Indonesia, jasa pembuatan website restoran, WhatsApp restoran">
+<meta name="author" content="FTS">
+
+<!-- OGP -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Buat Restoran Anda Ramai Sejak Sebelum Grand Opening | FTS">
+<meta property="og:description" content="Optimasi Instagram, Google Maps, dan website — semua diarahkan ke chat WhatsApp & reservasi nyata. Untuk restoran, kafe, & F&B.">
+<meta property="og:locale" content="id_ID">
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'fts-green': {
+            50: '#f3f8f5',
+            100: '#e8f3ee',
+            200: '#c5e0d2',
+            300: '#9ec6b3',
+            400: '#5a9c7c',
+            500: '#1a8466',
+            600: '#0f6b51',
+            700: '#0a5740',
+            800: '#0a4d3a',
+            900: '#073d2e',
+            950: '#061a13',
+          },
+          'fts-gold': {
+            50: '#faf4e3',
+            100: '#f5ecd5',
+            200: '#ecdba8',
+            300: '#e0c478',
+            400: '#d4af37',
+            500: '#c9a961',
+            600: '#b8932e',
+            700: '#a88a2e',
+            800: '#7d6722',
+          },
+          'fts-cream': '#faf8f3',
+          'fts-cream-dark': '#f5f1e8',
+        },
+        fontFamily: {
+          sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+          serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        },
+        boxShadow: {
+          'gold': '0 14px 38px rgba(201,169,97,0.42)',
+          'green': '0 8px 24px rgba(7,61,46,0.10)',
+          'green-lg': '0 20px 50px rgba(7,61,46,0.18)',
+        },
+        animation: {
+          'cta-pulse': 'ctaPulse 2.4s ease-in-out infinite',
+          'live-pulse': 'livePulse 1.4s ease-in-out infinite',
+          'whatsapp-pulse': 'whatsappPulse 2.4s ease-in-out infinite',
+        },
+      }
+    }
+  }
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+
+<!-- Custom Animations -->
+<style>
+  @keyframes ctaPulse {
+    0%, 100% { box-shadow: 0 14px 38px rgba(201,169,97,0.42); }
+    50% { box-shadow: 0 18px 50px rgba(212,175,55,0.65); }
+  }
+  @keyframes livePulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.85); }
+  }
+  @keyframes whatsappPulse {
+    0%, 100% { box-shadow: 0 10px 28px rgba(37,211,102,0.45); }
+    50% { box-shadow: 0 16px 40px rgba(37,211,102,0.7); }
+  }
+  @keyframes ripple {
+    0% { transform: scale(1); opacity: 0.6; }
+    100% { transform: scale(1.7); opacity: 0; }
+  }
+  @keyframes urgencySweep {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Safe headline rendering — prevent word-smashing layout bugs */
+  h1, h2, h3, h4 {
+    white-space: normal;
+    word-break: keep-all;
+    overflow-wrap: normal;
+    word-spacing: normal;
+    letter-spacing: normal;
+    hyphens: none;
+  }
+
+  .gold-underline {
+    position: relative;
+    display: inline-block;
+  }
+  .gold-underline::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 2px;
+    height: 6px;
+    background: #d4af37;
+    opacity: 0.28;
+    z-index: -1;
+  }
+
+  .urgency-sweep::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(212,175,55,0.18), transparent);
+    animation: urgencySweep 3s linear infinite;
+  }
+
+  details > summary { list-style: none; }
+  details > summary::-webkit-details-marker { display: none; }
+
+  html { scroll-behavior: smooth; }
+
+  .section-label::before { content: "—— "; color: #c9a961; }
+  .section-label::after { content: " ——"; color: #c9a961; }
+</style>
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "FTS Pemasaran Restoran",
+  "description": "Layanan pemasaran khusus untuk restoran, kafe, dan F&B. Strategi Instagram, optimasi Google Maps, website yang efektif, dan AI untuk pemasaran. Mendukung pembukaan baru, renovasi, dan ekspansi cabang.",
+  "url": "https://example.com/restaurant-lp-id/",
+  "areaServed": ["ID", "Global"],
+  "serviceType": "Restaurant Digital Marketing"
+}
+</script>
+</head>
+
+<body class="bg-white text-slate-800">
+
+<!-- ===== Header ===== -->
+<header class="sticky top-0 z-50 bg-white/92 backdrop-blur-md border-b border-fts-cream-dark">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <a href="#" class="flex items-center gap-3 no-underline">
+      <span class="font-serif text-2xl font-bold text-fts-green-900 tracking-widest">F<span class="text-fts-gold-400">T</span>S</span>
+      <span class="hidden md:inline-block text-[0.7rem] tracking-widest text-slate-500 font-bold border-l border-fts-cream-dark pl-3">WEB UNTUK RESTORAN</span>
+    </a>
+    <div class="flex items-center gap-3">
+      <span class="hidden lg:inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-fts-gold-50 border border-fts-gold-400 text-fts-gold-700 text-xs font-bold">
+        <span class="w-2 h-2 bg-fts-gold-400 rounded-full animate-live-pulse"></span>
+        Kuota terbatas bulan ini
+      </span>
+      <a href="#contact" class="bg-gradient-to-br from-fts-gold-400 to-fts-gold-500 text-fts-green-950 px-5 py-2.5 rounded-full font-black text-sm shadow-md hover:shadow-gold transition-all whitespace-nowrap">Cek Analisis Gratis</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Urgency Bar ===== -->
+<div class="urgency-sweep relative bg-gradient-to-r from-fts-green-950 to-fts-green-900 text-white py-3 text-center text-sm font-bold border-b-2 border-fts-gold-400 overflow-hidden">
+  <div class="relative z-10 inline-flex items-center gap-3 flex-wrap justify-center px-4">
+    <span class="w-2.5 h-2.5 bg-red-500 rounded-full animate-live-pulse shadow-lg shadow-red-500/50"></span>
+    <span><span class="text-fts-gold-400 font-black">Analisis AI Gratis</span> Sedang Dibuka</span>
+    <span class="hidden sm:inline-block w-px h-4 bg-white/30"></span>
+    <span class="hidden sm:inline">Kuota terbatas bulan ini</span>
+  </div>
+</div>
+
+<!-- ===== Hero ===== -->
+<section class="relative overflow-hidden bg-fts-cream py-20 md:py-28">
+  <div class="absolute inset-0 opacity-50" style="background-image: linear-gradient(rgba(15,107,81,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(15,107,81,0.05) 1px, transparent 1px); background-size: 56px 56px;"></div>
+  <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-br from-transparent to-fts-green-100/30 pointer-events-none"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-[1.05fr_1fr] gap-12 items-center">
+    <!-- Text -->
+    <div class="min-w-0">
+      <span class="inline-flex items-center gap-2 bg-gradient-to-br from-fts-green-900 to-fts-green-700 text-fts-gold-400 px-4 py-2 rounded-full text-xs font-bold tracking-wider mb-5 shadow-md">
+        ✦ UNTUK RESTORAN / KAFÉ / GRAND OPENING
+      </span>
+
+      <h1 class="font-black text-fts-green-900 leading-tight mb-5 text-[2rem] md:text-[2.4rem] lg:text-[2.8rem]">
+        Buat Restoran Anda <span class="gold-underline text-fts-gold-400">Ramai</span><br>
+        Sejak Sebelum Grand Opening
+      </h1>
+
+      <p class="text-fts-green-900 font-black text-base md:text-lg mb-6 inline-flex items-center gap-2">
+        <span class="text-fts-gold-400 text-xl">✦</span>
+        Ramai & banyak pelanggan <span class="text-fts-gold-700">sejak hari pertama.</span>
+      </p>
+
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="inline-block bg-fts-green-50 text-fts-green-900 font-bold text-xs md:text-sm px-4 py-2 rounded-full border border-fts-green-200">
+          Pembukaan baru · Renovasi · Ekspansi cabang
+        </span>
+        <span class="inline-block bg-fts-gold-50 text-fts-gold-700 font-bold text-xs md:text-sm px-4 py-2 rounded-full border border-fts-gold-400">
+          Untuk UMKM kuliner & restoran skala menengah
+        </span>
+      </div>
+
+      <h2 class="text-fts-green-700 font-bold text-lg md:text-xl mb-6">
+        Kami mengubah traffic Instagram & Google<br>menjadi <span class="text-fts-gold-700">chat WhatsApp & reservasi nyata.</span>
+      </h2>
+
+      <p class="text-slate-600 leading-relaxed mb-4">
+        Restoran tidak tumbuh dari sekadar <em>like</em>. Tumbuh dari <strong class="text-fts-green-900">reservasi yang masuk</strong>. Untuk itu, butuh 2 hal:
+      </p>
+      <ul class="space-y-2 mb-7">
+        <li class="flex items-start gap-3"><span class="text-fts-gold-400 font-black mt-0.5">✓</span><span class="text-slate-700"><strong class="text-fts-green-900">Mudah ditemukan</strong> calon pelanggan</span></li>
+        <li class="flex items-start gap-3"><span class="text-fts-gold-400 font-black mt-0.5">✓</span><span class="text-slate-700"><strong class="text-fts-green-900">Mudah dihubungi</strong> via WhatsApp</span></li>
+      </ul>
+      <p class="text-slate-600 leading-relaxed mb-7">
+        FTS mengoptimalkan <strong class="text-fts-green-900">Instagram, Google Maps, dan website</strong> Anda — semua diarahkan ke <strong class="text-fts-green-900">satu titik: WhatsApp</strong>, tempat pelanggan benar-benar reservasi.
+      </p>
+
+      <!-- Sub Message -->
+      <div class="bg-white border-l-4 border-fts-gold-400 px-6 py-5 mb-8 rounded-r-xl shadow-sm">
+        <p class="leading-relaxed">
+          Masa persiapan = <strong class="text-fts-green-900">waktu emas</strong> untuk menang duluan.<br>
+          <strong class="text-fts-gold-400 font-black">Restoran yang "selalu ramai" bukan kebetulan — mereka punya strategi.</strong>
+        </p>
+      </div>
+
+      <!-- Spots Counter -->
+      <div class="inline-flex items-center gap-3 bg-red-50 border-2 border-red-400 rounded-xl px-5 py-3 mb-7">
+        <span class="w-9 h-9 bg-red-500 text-white rounded-full flex items-center justify-center font-black animate-live-pulse">!</span>
+        <div class="text-left leading-tight">
+          <strong class="block text-red-700 font-black text-sm">Analisis AI Gratis Sedang Dibuka</strong>
+          <span class="text-slate-600 text-xs">Kuota terbatas bulan ini — daftar segera</span>
+        </div>
+      </div>
+
+      <!-- CTAs -->
+      <div class="space-y-3">
+        <div class="border-l-4 border-fts-gold-400 pl-4 py-1 space-y-1.5">
+          <p class="text-fts-green-900 font-bold text-base md:text-lg leading-relaxed">
+            Restoran yang mulai lebih awal, <span class="text-fts-gold-700">lebih cepat ramai chat WhatsApp setelah opening.</span>
+          </p>
+          <p class="text-slate-600 text-sm md:text-base leading-relaxed">
+            Bedanya jauh — yang siap vs yang panik.
+          </p>
+        </div>
+        <p class="text-sm text-slate-500 font-bold">⏱ Hanya 60 detik · 100% Gratis · Tanpa pemaksaan</p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="#contact" class="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-fts-gold-400 via-fts-gold-500 to-fts-gold-400 text-fts-green-950 px-8 py-5 rounded-full font-black text-base md:text-lg shadow-gold hover:-translate-y-1 transition-all animate-cta-pulse">
+            Cek Analisis Gratis
+            <span>→</span>
+          </a>
+          <a href="https://wa.me/" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-7 py-5 rounded-full font-bold shadow-lg hover:bg-[#1ebe5a] hover:-translate-y-0.5 transition-all">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Konsultasi via WhatsApp
+          </a>
+        </div>
+        <p class="text-xs text-slate-500 pt-2">✓ Tanpa pemaksaan jualan · ✓ Hanya tanya-tanya juga boleh · ✓ Sedang membandingkan? Tidak masalah</p>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="flex flex-wrap gap-2 mt-8">
+        <span class="bg-white text-fts-green-900 text-xs font-bold px-4 py-2 rounded-full border border-fts-green-100 shadow-sm">Pengalaman F&B</span>
+        <span class="bg-white text-fts-green-900 text-xs font-bold px-4 py-2 rounded-full border border-fts-green-100 shadow-sm">Strategi Instagram</span>
+        <span class="bg-white text-fts-green-900 text-xs font-bold px-4 py-2 rounded-full border border-fts-green-100 shadow-sm">Optimasi Google Maps</span>
+        <span class="bg-white text-fts-green-900 text-xs font-bold px-4 py-2 rounded-full border border-fts-green-100 shadow-sm">Multi-bahasa</span>
+        <span class="bg-white text-fts-green-900 text-xs font-bold px-4 py-2 rounded-full border border-fts-green-100 shadow-sm">Siap ekspansi cabang</span>
+      </div>
+    </div>
+
+    <!-- Image -->
+    <div class="relative">
+      <div class="relative rounded-3xl overflow-hidden shadow-green-lg">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Restoran ramai pelanggan dengan strategi pemasaran FTS" class="w-full h-[420px] md:h-[540px] object-cover">
+        <div class="absolute inset-0 bg-gradient-to-br from-fts-green-900/20 to-transparent"></div>
+
+        <!-- Floating Stat Card -->
+        <div class="absolute bottom-5 left-5 bg-white/95 backdrop-blur-md rounded-xl p-4 shadow-green-lg flex items-center gap-3 border border-fts-gold-100">
+          <div class="w-11 h-11 rounded-full bg-gradient-to-br from-fts-gold-400 to-fts-gold-500 flex items-center justify-center text-fts-green-950 font-black text-lg">↑</div>
+          <div>
+            <strong class="block text-fts-green-900 font-black text-sm">Lebih banyak chat WhatsApp</strong>
+            <span class="text-xs text-slate-500">Bukan sekadar like, tapi reservasi nyata</span>
+          </div>
+        </div>
+      </div>
+      <div class="hidden md:block absolute -bottom-7 -right-7 w-32 h-32 border-[3px] border-fts-gold-400 rounded-3xl -z-10"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Trust Logos / Categories ===== -->
+<section class="bg-fts-cream-dark py-12 border-y border-fts-cream-dark">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <p class="text-slate-500 text-xs tracking-widest font-bold mb-6">JENIS USAHA YANG KAMI DUKUNG</p>
+    <div class="flex flex-wrap justify-center gap-3">
+      <span class="bg-white text-fts-green-900 px-5 py-2.5 rounded-full border border-fts-cream-dark text-sm font-bold shadow-sm">Restoran</span>
+      <span class="bg-white text-fts-green-900 px-5 py-2.5 rounded-full border border-fts-cream-dark text-sm font-bold shadow-sm">Kafé</span>
+      <span class="bg-white text-fts-green-900 px-5 py-2.5 rounded-full border border-fts-cream-dark text-sm font-bold shadow-sm">Warung Makan</span>
+      <span class="bg-white text-fts-green-900 px-5 py-2.5 rounded-full border border-fts-cream-dark text-sm font-bold shadow-sm">Bar & Pub</span>
+      <span class="bg-white text-fts-green-900 px-5 py-2.5 rounded-full border border-fts-cream-dark text-sm font-bold shadow-sm">Bakery</span>
+      <span class="bg-white text-fts-green-900 px-5 py-2.5 rounded-full border border-fts-cream-dark text-sm font-bold shadow-sm">Kuliner Asia</span>
+      <span class="bg-white text-fts-green-900 px-5 py-2.5 rounded-full border border-fts-cream-dark text-sm font-bold shadow-sm">Steakhouse & BBQ</span>
+      <span class="bg-white text-fts-green-900 px-5 py-2.5 rounded-full border border-fts-cream-dark text-sm font-bold shadow-sm">Dessert & Bistro</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Problems ===== -->
+<section class="bg-fts-green-50 py-24 md:py-32">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <span class="section-label inline-block text-fts-gold-400 font-serif italic tracking-widest text-sm font-semibold mb-3">MASALAH UMUM</span>
+      <h2 class="text-fts-green-900 font-black text-3xl md:text-4xl mb-5 leading-tight">
+        Pemilik Restoran Sering<br>
+        <span class="text-fts-gold-400">Menghadapi Masalah yang Sama.</span>
+      </h2>
+      <p class="text-slate-600 leading-relaxed max-w-2xl mx-auto">
+        Makanan enak, suasana bagus — tapi pelanggan tetap sepi?<br>
+        Masalahnya bukan di restoran. Tapi di cara orang <strong>menemukan</strong> dan <strong>memilih</strong> Anda.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+      <div class="bg-white border-l-4 border-fts-gold-400 rounded-xl p-6 shadow-sm flex items-start gap-4">
+        <span class="w-7 h-7 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center text-sm font-black shrink-0 mt-0.5">✓</span>
+        <p class="leading-relaxed">Setelah buka, <strong class="text-fts-green-900">pelanggan tidak seramai yang diharapkan</strong></p>
+      </div>
+      <div class="bg-white border-l-4 border-fts-gold-400 rounded-xl p-6 shadow-sm flex items-start gap-4">
+        <span class="w-7 h-7 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center text-sm font-black shrink-0 mt-0.5">✓</span>
+        <p class="leading-relaxed">Sudah aktif posting Instagram, tapi <strong class="text-fts-green-900">tidak ada yang datang</strong></p>
+      </div>
+      <div class="bg-white border-l-4 border-fts-gold-400 rounded-xl p-6 shadow-sm flex items-start gap-4">
+        <span class="w-7 h-7 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center text-sm font-black shrink-0 mt-0.5">✓</span>
+        <p class="leading-relaxed"><strong class="text-fts-green-900">Google Maps</strong> tidak terurus, susah ditemukan</p>
+      </div>
+      <div class="bg-white border-l-4 border-fts-gold-400 rounded-xl p-6 shadow-sm flex items-start gap-4">
+        <span class="w-7 h-7 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center text-sm font-black shrink-0 mt-0.5">✓</span>
+        <p class="leading-relaxed">Followers Instagram tidak naik, <strong class="text-fts-green-900">engagement rendah</strong></p>
+      </div>
+      <div class="bg-white border-l-4 border-fts-gold-400 rounded-xl p-6 shadow-sm flex items-start gap-4">
+        <span class="w-7 h-7 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center text-sm font-black shrink-0 mt-0.5">✓</span>
+        <p class="leading-relaxed"><strong class="text-fts-green-900">Sistem reservasi</strong> tidak jelas, calon pelanggan bingung</p>
+      </div>
+      <div class="bg-white border-l-4 border-fts-gold-400 rounded-xl p-6 shadow-sm flex items-start gap-4">
+        <span class="w-7 h-7 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center text-sm font-black shrink-0 mt-0.5">✓</span>
+        <p class="leading-relaxed">Sulit menjangkau <strong class="text-fts-green-900">wisatawan asing</strong> (belum multi-bahasa)</p>
+      </div>
+    </div>
+
+    <div class="bg-white border-2 border-fts-gold-400 rounded-2xl p-8 max-w-3xl mx-auto mt-10 text-center shadow-sm">
+      <p class="text-fts-green-900 leading-relaxed">
+        Kalau salah satunya kena, <strong class="text-fts-gold-400 font-black">masalahnya di sistem pemasaran — bukan di restoran Anda.</strong><br>
+        Perbaiki sistemnya, pelanggan akan datang sendiri.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Solutions ===== -->
+<section class="bg-white py-24 md:py-32">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <span class="section-label inline-block text-fts-gold-400 font-serif italic tracking-widest text-sm font-semibold mb-3">SOLUSI</span>
+      <h2 class="text-fts-green-900 font-black text-3xl md:text-4xl mb-5 leading-tight">
+        4 Solusi Untuk<br>
+        <span class="text-fts-gold-400">Membuat Restoran Anda Ramai.</span>
+      </h2>
+      <p class="text-slate-600 leading-relaxed max-w-2xl mx-auto">
+        Instagram + Google Maps + Website —<br>
+        semua diarahkan ke <strong class="text-fts-green-900">satu titik: WhatsApp</strong>, tempat pelanggan reservasi.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Solution 1: Instagram (emphasized) -->
+      <div class="bg-fts-cream rounded-2xl p-8 shadow-sm hover:shadow-green-lg hover:-translate-y-1 transition-all border-t-4 border-fts-gold-400">
+        <div class="font-serif italic text-5xl text-fts-gold-400 leading-none mb-4">01</div>
+        <h3 class="text-fts-green-900 font-black text-lg mb-3">Optimasi Instagram</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">Kami optimalkan Instagram yang sudah Anda miliki untuk mendatangkan pelanggan. Konten + profil + alur menuju WhatsApp.</p>
+      </div>
+      <!-- Solution 2: Google Maps (emphasized) -->
+      <div class="bg-fts-cream rounded-2xl p-8 shadow-sm hover:shadow-green-lg hover:-translate-y-1 transition-all border-t-4 border-fts-gold-400">
+        <div class="font-serif italic text-5xl text-fts-gold-400 leading-none mb-4">02</div>
+        <h3 class="text-fts-green-900 font-black text-lg mb-3">Optimasi Google Maps</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">Muncul saat orang cari "restoran terdekat" atau "kafe enak di [kota]". SEO lokal, review, foto — diarahkan ke WhatsApp.</p>
+      </div>
+      <!-- Solution 3: WhatsApp Reservation Flow -->
+      <div class="bg-fts-cream rounded-2xl p-8 shadow-sm hover:shadow-green-lg hover:-translate-y-1 transition-all border-t-4 border-fts-green-900">
+        <div class="font-serif italic text-5xl text-fts-gold-400 leading-none mb-4">03</div>
+        <h3 class="text-fts-green-900 font-black text-lg mb-3">Alur Reservasi WhatsApp</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">Dari website, Maps, Instagram — pelanggan langsung diarahkan ke WhatsApp Anda. Reservasi tanpa ribet, langsung confirmed.</p>
+      </div>
+      <!-- Solution 4: Multilingual -->
+      <div class="bg-fts-cream rounded-2xl p-8 shadow-sm hover:shadow-green-lg hover:-translate-y-1 transition-all border-t-4 border-fts-green-900">
+        <div class="font-serif italic text-5xl text-fts-gold-400 leading-none mb-4">04</div>
+        <h3 class="text-fts-green-900 font-black text-lg mb-3">Multi-bahasa & Internasional</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">Bahasa Inggris dan lainnya — jangkau wisatawan asing dan siapkan ekspansi cabang ke luar negeri.</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="#contact" class="inline-flex items-center gap-2 bg-gradient-to-br from-fts-gold-400 via-fts-gold-500 to-fts-gold-400 text-fts-green-950 px-10 py-5 rounded-full font-black text-base md:text-lg shadow-gold hover:-translate-y-1 transition-all animate-cta-pulse">
+        Cek Analisis Gratis
+        <span>→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Services ===== -->
+<section class="bg-fts-green-50 py-24 md:py-32">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <span class="section-label inline-block text-fts-gold-400 font-serif italic tracking-widest text-sm font-semibold mb-3">LAYANAN</span>
+      <h2 class="text-fts-green-900 font-black text-3xl md:text-4xl mb-5 leading-tight">
+        4 Layanan Khusus untuk <span class="text-fts-gold-400">Restoran</span>
+      </h2>
+
+      <div class="max-w-3xl mx-auto bg-white border-2 border-fts-gold-400 rounded-2xl p-6 md:p-7 shadow-sm">
+        <p class="text-fts-green-900 font-black text-base md:text-lg leading-relaxed">
+          Kami bukan sekadar <span class="line-through text-slate-400 font-medium">jasa website</span>.<br>
+          Kami <span class="text-fts-gold-400 text-xl md:text-2xl">membangun sistem yang mendatangkan pelanggan</span>.
+        </p>
+        <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+          Semua strategi kami diarahkan untuk satu tujuan: <strong class="text-fts-green-900">menghasilkan chat WhatsApp dan reservasi nyata</strong>. Bukan sekadar like, bukan sekadar followers.
+        </p>
+      </div>
+
+      <!-- WhatsApp role explanation -->
+      <div class="max-w-3xl mx-auto bg-[#25D366]/5 border border-[#25D366]/30 rounded-2xl p-6 md:p-7 mt-5 shadow-sm">
+        <p class="text-fts-green-900 font-black text-sm md:text-base mb-3 flex items-center gap-2">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366" aria-hidden="true" class="shrink-0">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Kenapa WhatsApp jadi pusat sistem kami?
+        </p>
+        <p class="text-slate-600 text-sm leading-relaxed mb-3">
+          Di Indonesia, <strong class="text-fts-green-900">WhatsApp adalah channel utama</strong> untuk reservasi dan tanya-tanya. Pelanggan tidak akan mengirim email — mereka chat WhatsApp.
+        </p>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Sistem kami dirancang untuk mengarahkan pelanggan langsung ke WhatsApp Anda — dari Instagram, dari Google Maps, dari website. <strong class="text-fts-green-900">Di sanalah pelanggan benar-benar reservasi.</strong>
+        </p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-green-lg transition-all flex gap-5 items-start">
+        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-fts-gold-400 to-fts-gold-500 text-fts-green-950 flex items-center justify-center font-serif font-black text-xl shrink-0 shadow-md">Ⅰ</div>
+        <div>
+          <h3 class="text-fts-green-900 font-black text-lg mb-2">Pembuatan Website Restoran</h3>
+          <p class="text-fts-gold-700 font-bold text-sm mb-2 italic">Website yang membuat orang ingin datang.</p>
+          <p class="text-slate-600 text-sm leading-relaxed">Menu, suasana, dan reservasi dalam satu klik. Mobile-first, foto-foto menggugah selera, dan desain yang mengarah ke konversi.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-green-lg transition-all flex gap-5 items-start">
+        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-fts-gold-400 to-fts-gold-500 text-fts-green-950 flex items-center justify-center font-serif font-black text-xl shrink-0 shadow-md">Ⅱ</div>
+        <div>
+          <h3 class="text-fts-green-900 font-black text-lg mb-2">SEO Lokal & Google Maps</h3>
+          <p class="text-fts-gold-700 font-bold text-sm mb-2 italic">Muncul di pencarian yang tepat sasaran.</p>
+          <p class="text-slate-600 text-sm leading-relaxed">"Restoran enak di Jakarta", "kafé instagramable di Bandung" — kami pastikan restoran Anda muncul di pencarian seperti itu.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-green-lg transition-all flex gap-5 items-start">
+        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-fts-gold-400 to-fts-gold-500 text-fts-green-950 flex items-center justify-center font-serif font-black text-xl shrink-0 shadow-md">Ⅲ</div>
+        <div>
+          <h3 class="text-fts-green-900 font-black text-lg mb-2">Optimasi Instagram</h3>
+          <p class="text-fts-gold-700 font-bold text-sm mb-2 italic">Kami optimalkan Instagram yang sudah Anda miliki untuk mendatangkan pelanggan.</p>
+          <p class="text-slate-600 text-sm leading-relaxed">Konten, profil, dan tombol CTA yang mengarahkan followers langsung ke WhatsApp Anda — bukan sekadar like, tapi reservasi nyata.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-green-lg transition-all flex gap-5 items-start">
+        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-fts-gold-400 to-fts-gold-500 text-fts-green-950 flex items-center justify-center font-serif font-black text-xl shrink-0 shadow-md">Ⅳ</div>
+        <div>
+          <h3 class="text-fts-green-900 font-black text-lg mb-2">AI untuk Pemasaran</h3>
+          <p class="text-fts-gold-700 font-bold text-sm mb-2 italic">Keputusan berdasar data, bukan tebak-tebakan.</p>
+          <p class="text-slate-600 text-sm leading-relaxed">Analisis kompetitor, riset kata kunci, dan rekomendasi perbaikan dengan bantuan AI — agar pemasaran Anda lebih akurat.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Process ===== -->
+<section class="bg-white py-24 md:py-32">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <span class="section-label inline-block text-fts-gold-400 font-serif italic tracking-widest text-sm font-semibold mb-3">PROSES</span>
+      <h2 class="text-fts-green-900 font-black text-3xl md:text-4xl mb-5 leading-tight">
+        5 Langkah Menuju <span class="text-fts-gold-400">Restoran yang Ramai.</span>
+      </h2>
+      <p class="text-slate-600 leading-relaxed">Dari persiapan sebelum buka, sampai operasional jangka panjang — kami dampingi.</p>
+    </div>
+
+    <div class="space-y-4">
+      <div class="bg-fts-cream rounded-2xl p-7 shadow-sm flex items-center gap-6 hover:translate-x-1 transition-all">
+        <div class="w-16 h-16 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center font-serif font-black text-lg shrink-0">01</div>
+        <div>
+          <h3 class="text-fts-green-900 font-black mb-1">Diskusi Awal <span class="text-xs text-fts-gold-700 font-bold ml-2 italic">30–60 menit · Online tersedia</span></h3>
+          <p class="text-slate-600 text-sm">Kami tanya konsep restoran, target pelanggan, dan tantangan yang Anda hadapi.</p>
+        </div>
+      </div>
+      <div class="bg-fts-cream rounded-2xl p-7 shadow-sm flex items-center gap-6 hover:translate-x-1 transition-all">
+        <div class="w-16 h-16 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center font-serif font-black text-lg shrink-0">02</div>
+        <div>
+          <h3 class="text-fts-green-900 font-black mb-1">Strategi & Penawaran <span class="text-xs text-fts-gold-700 font-bold ml-2 italic">Maksimal 5 hari kerja</span></h3>
+          <p class="text-slate-600 text-sm">Analisis AI digabung pengalaman tim untuk menyusun strategi Instagram × Google Maps × Website yang cocok.</p>
+        </div>
+      </div>
+      <div class="bg-fts-cream rounded-2xl p-7 shadow-sm flex items-center gap-6 hover:translate-x-1 transition-all">
+        <div class="w-16 h-16 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center font-serif font-black text-lg shrink-0">03</div>
+        <div>
+          <h3 class="text-fts-green-900 font-black mb-1">Pengerjaan <span class="text-xs text-fts-gold-700 font-bold ml-2 italic">2–4 minggu</span></h3>
+          <p class="text-slate-600 text-sm">Website, Google Business Profile, dan akun media sosial disiapkan menjadi satu sistem pemasaran utuh.</p>
+        </div>
+      </div>
+      <div class="bg-fts-cream rounded-2xl p-7 shadow-sm flex items-center gap-6 hover:translate-x-1 transition-all">
+        <div class="w-16 h-16 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center font-serif font-black text-lg shrink-0">04</div>
+        <div>
+          <h3 class="text-fts-green-900 font-black mb-1">Peluncuran & Aktivasi</h3>
+          <p class="text-slate-600 text-sm">Web, Instagram, dan Google Maps diaktifkan bersamaan supaya momentumnya kuat sejak hari pertama.</p>
+        </div>
+      </div>
+      <div class="bg-fts-cream rounded-2xl p-7 shadow-sm flex items-center gap-6 hover:translate-x-1 transition-all">
+        <div class="w-16 h-16 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center font-serif font-black text-lg shrink-0">05</div>
+        <div>
+          <h3 class="text-fts-green-900 font-black mb-1">Optimasi Berkelanjutan <span class="text-xs text-fts-gold-700 font-bold ml-2 italic">Paket operasional</span></h3>
+          <p class="text-slate-600 text-sm">Laporan bulanan dan rekomendasi perbaikan — sistem pemasaran Anda tumbuh dari waktu ke waktu.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Case Studies ===== -->
+<section class="bg-fts-green-50 py-24 md:py-32">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <span class="section-label inline-block text-fts-gold-400 font-serif italic tracking-widest text-sm font-semibold mb-3">STUDI KASUS</span>
+      <h2 class="text-fts-green-900 font-black text-3xl md:text-4xl mb-5 leading-tight">
+        Contoh Penerapan <span class="text-fts-gold-400">Strategi Pemasaran</span>
+      </h2>
+      <p class="text-slate-600 leading-relaxed max-w-xl mx-auto">Berikut contoh skenario penerapan strategi FTS pada berbagai jenis restoran.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Case 1 -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-green-lg hover:-translate-y-1 transition-all">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Studi kasus pembukaan kafé baru" class="w-full h-48 object-cover">
+        <div class="p-7">
+          <span class="inline-block bg-fts-green-900 text-fts-gold-400 px-3 py-1 rounded-full text-xs font-bold tracking-wide mb-4">PEMBUKAAN BARU / KAFÉ</span>
+          <p class="text-fts-gold-700 text-xs font-black tracking-wider mb-1">TANTANGAN</p>
+          <p class="text-slate-700 text-sm mb-3">Awareness nol, belum ada sistem reservasi sebelum buka.</p>
+          <p class="text-fts-gold-700 text-xs font-black tracking-wider mb-1">PENDEKATAN</p>
+          <p class="text-slate-700 text-sm mb-3">Strategi Instagram pra-launching, setup Google Business Profile, sistem reservasi terintegrasi.</p>
+          <p class="text-fts-gold-700 text-xs font-black tracking-wider mb-1">HASIL</p>
+          <p class="bg-gradient-to-br from-fts-green-900 to-fts-green-700 text-white px-4 py-3 rounded-lg font-bold text-sm">Reservasi sudah masuk sebelum opening, <span class="text-fts-gold-400">akhir pekan pertama penuh</span></p>
+          <p class="text-xs text-slate-500 mt-3 leading-relaxed">※ Studi kasus ini adalah contoh ilustrasi.</p>
+        </div>
+      </div>
+      <!-- Case 2 -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-green-lg hover:-translate-y-1 transition-all">
+        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=800&q=80" alt="Studi kasus restoran existing yang stagnan" class="w-full h-48 object-cover">
+        <div class="p-7">
+          <span class="inline-block bg-fts-green-900 text-fts-gold-400 px-3 py-1 rounded-full text-xs font-bold tracking-wide mb-4">EXISTING / RESTORAN</span>
+          <p class="text-fts-gold-700 text-xs font-black tracking-wider mb-1">TANTANGAN</p>
+          <p class="text-slate-700 text-sm mb-3">Aktif di Instagram, tapi pertumbuhan followers dan kunjungan stagnan.</p>
+          <p class="text-fts-gold-700 text-xs font-black tracking-wider mb-1">PENDEKATAN</p>
+          <p class="text-slate-700 text-sm mb-3">Re-design konsep konten, perbaikan customer journey, penguatan Google Maps.</p>
+          <p class="text-fts-gold-700 text-xs font-black tracking-wider mb-1">HASIL</p>
+          <p class="bg-gradient-to-br from-fts-green-900 to-fts-green-700 text-white px-4 py-3 rounded-lg font-bold text-sm">Followers Instagram tumbuh signifikan, kunjungan ikut naik</p>
+          <p class="text-xs text-slate-500 mt-3 leading-relaxed">※ Studi kasus ini adalah contoh ilustrasi.</p>
+        </div>
+      </div>
+      <!-- Case 3 -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-green-lg hover:-translate-y-1 transition-all">
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" alt="Studi kasus restoran ekspansi cabang" class="w-full h-48 object-cover">
+        <div class="p-7">
+          <span class="inline-block bg-fts-green-900 text-fts-gold-400 px-3 py-1 rounded-full text-xs font-bold tracking-wide mb-4">EKSPANSI / CABANG BARU</span>
+          <p class="text-fts-gold-700 text-xs font-black tracking-wider mb-1">TANTANGAN</p>
+          <p class="text-slate-700 text-sm mb-3">Membuka cabang di kota baru tanpa awareness lokal sama sekali.</p>
+          <p class="text-fts-gold-700 text-xs font-black tracking-wider mb-1">PENDEKATAN</p>
+          <p class="text-slate-700 text-sm mb-3">Website multi-cabang, strategi sosial lokal, lokalisasi Google Maps.</p>
+          <p class="text-fts-gold-700 text-xs font-black tracking-wider mb-1">HASIL</p>
+          <p class="bg-gradient-to-br from-fts-green-900 to-fts-green-700 text-white px-4 py-3 rounded-lg font-bold text-sm">Pelanggan stabil <span class="text-fts-gold-400">sejak bulan pertama</span> di lokasi baru</p>
+          <p class="text-xs text-slate-500 mt-3 leading-relaxed">※ Studi kasus ini adalah contoh ilustrasi.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center text-xs text-slate-500 mt-8 leading-relaxed bg-fts-cream-dark border border-fts-cream-dark rounded-xl px-6 py-4 max-w-2xl mx-auto">
+      ※ Studi kasus di halaman ini adalah contoh ilustrasi dan tidak menjamin hasil tertentu.<br>Hasil sesungguhnya bervariasi tergantung jenis usaha, lokasi, dan operasional.
+    </p>
+  </div>
+</section>
+
+<!-- ===== Free Diagnosis Promo ===== -->
+<section class="bg-white py-24 md:py-32">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-10">
+      <span class="section-label inline-block text-fts-gold-400 font-serif italic tracking-widest text-sm font-semibold mb-3">ANALISIS GRATIS</span>
+      <h2 class="text-fts-green-900 font-black text-3xl md:text-4xl mb-5 leading-tight">
+        Hanya 60 Detik untuk Daftar.<br>
+        <span class="text-fts-gold-400">Analisis AI Gratis untuk Restoran Anda.</span>
+      </h2>
+      <p class="text-slate-600 leading-relaxed max-w-2xl mx-auto">
+        AI kami akan menganalisis Website, Instagram, dan Google Maps Anda secara menyeluruh, lalu mengirim <strong class="text-fts-green-900">laporan rekomendasi perbaikan</strong> dalam 1 hari kerja.
+      </p>
+    </div>
+
+    <div class="bg-gradient-to-br from-fts-gold-50 via-white to-fts-gold-50 border-2 border-dashed border-fts-gold-400 rounded-2xl p-8 md:p-10">
+      <div class="grid md:grid-cols-3 gap-6 mb-8">
+        <div class="text-center">
+          <div class="w-14 h-14 mx-auto rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center font-serif font-black text-lg mb-3">①</div>
+          <h4 class="text-fts-green-900 font-black mb-2 text-sm">Audit Website</h4>
+          <p class="text-slate-600 text-xs">Cek website & alur reservasi Anda</p>
+        </div>
+        <div class="text-center">
+          <div class="w-14 h-14 mx-auto rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center font-serif font-black text-lg mb-3">②</div>
+          <h4 class="text-fts-green-900 font-black mb-2 text-sm">Audit Instagram & Google Maps</h4>
+          <p class="text-slate-600 text-xs">Evaluasi performa media sosial & lokal</p>
+        </div>
+        <div class="text-center">
+          <div class="w-14 h-14 mx-auto rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center font-serif font-black text-lg mb-3">③</div>
+          <h4 class="text-fts-green-900 font-black mb-2 text-sm">Laporan Rekomendasi</h4>
+          <p class="text-slate-600 text-xs">Daftar perbaikan dengan urutan prioritas</p>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a href="#contact" class="inline-flex items-center gap-2 bg-gradient-to-br from-fts-gold-400 via-fts-gold-500 to-fts-gold-400 text-fts-green-950 px-10 py-5 rounded-full font-black text-base md:text-lg shadow-gold hover:-translate-y-1 transition-all animate-cta-pulse">
+          Cek Analisis Gratis
+          <span>→</span>
+        </a>
+        <p class="text-xs text-slate-500 mt-4 font-bold">⏱ Hanya 60 detik · 100% Gratis · Tanpa pemaksaan</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Final CTA Section with Form ===== -->
+<section id="contact" class="relative bg-gradient-to-br from-fts-green-900 to-fts-green-700 text-white py-28 md:py-32 overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(circle at 18% 28%, rgba(212,175,55,0.16), transparent 42%), radial-gradient(circle at 82% 72%, rgba(212,175,55,0.13), transparent 42%);"></div>
+
+  <div class="relative max-w-4xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <span class="section-label inline-block text-fts-gold-400 font-serif italic tracking-widest text-sm font-semibold mb-3">KONTAK</span>
+      <h2 class="text-white font-black text-3xl md:text-4xl mb-6 leading-tight">
+        Mari Bangun Sistem<br>
+        <span class="text-fts-gold-400">Pelanggan Restoran Anda.</span>
+      </h2>
+      <p class="text-white/90 leading-relaxed max-w-2xl mx-auto">
+        Mulai lebih awal = lebih cepat ramai <strong class="text-fts-gold-400">chat WhatsApp</strong> setelah opening.<br>
+        Cek posisi restoran Anda dulu — <strong class="text-fts-gold-400">100% gratis, hanya 60 detik</strong>.
+      </p>
+    </div>
+
+    <!-- Risk Reversal Cards -->
+    <div class="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto mb-12">
+      <div class="bg-white/10 backdrop-blur-md border border-fts-gold-400/30 rounded-xl p-5 flex items-start gap-3">
+        <span class="text-fts-gold-400 text-2xl leading-none mt-0.5">✓</span>
+        <div>
+          <strong class="block text-fts-gold-400 font-black text-sm mb-1">Tanpa pemaksaan jualan</strong>
+          <span class="text-white/80 text-xs leading-relaxed">Tidak akan ada follow-up paksa atau telepon mengganggu.</span>
+        </div>
+      </div>
+      <div class="bg-white/10 backdrop-blur-md border border-fts-gold-400/30 rounded-xl p-5 flex items-start gap-3">
+        <span class="text-fts-gold-400 text-2xl leading-none mt-0.5">✓</span>
+        <div>
+          <strong class="block text-fts-gold-400 font-black text-sm mb-1">Hanya tanya-tanya juga boleh</strong>
+          <span class="text-white/80 text-xs leading-relaxed">"Mau dengar dulu sarannya" pun kami sambut dengan senang hati.</span>
+        </div>
+      </div>
+      <div class="bg-white/10 backdrop-blur-md border border-fts-gold-400/30 rounded-xl p-5 flex items-start gap-3">
+        <span class="text-fts-gold-400 text-2xl leading-none mt-0.5">✓</span>
+        <div>
+          <strong class="block text-fts-gold-400 font-black text-sm mb-1">Sedang membandingkan? Tidak masalah</strong>
+          <span class="text-white/80 text-xs leading-relaxed">Anda boleh konsultasi sambil bandingkan dengan agensi lain.</span>
+        </div>
+      </div>
+      <div class="bg-white/10 backdrop-blur-md border border-fts-gold-400/30 rounded-xl p-5 flex items-start gap-3">
+        <span class="text-fts-gold-400 text-2xl leading-none mt-0.5">✓</span>
+        <div>
+          <strong class="block text-fts-gold-400 font-black text-sm mb-1">Mendukung ekspansi cabang</strong>
+          <span class="text-white/80 text-xs leading-relaxed">Buka cabang di kota lain atau ke luar negeri? Kami siap dampingi.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="bg-white text-slate-800 rounded-3xl p-8 md:p-12 max-w-2xl mx-auto shadow-2xl border-t-8 border-fts-gold-400">
+      <h3 class="text-fts-green-900 font-black text-xl md:text-2xl text-center mb-2">Form Analisis Gratis (60 Detik)</h3>
+      <p class="text-center text-slate-500 text-sm mb-7">Isi form berikut, kami akan kirim laporan AI dalam 1 hari kerja.</p>
+      <p class="text-center mb-7">
+        <span class="inline-block bg-fts-gold-50 border border-fts-gold-400 text-fts-gold-700 text-xs font-black rounded-full px-3 py-1.5">⏱ Kuota terbatas bulan ini</span>
+      </p>
+
+      <form action="#" method="post" novalidate class="space-y-5">
+        <div>
+          <label for="name" class="block text-fts-green-900 font-bold text-sm mb-2">Nama Lengkap <span class="text-fts-gold-700 text-xs bg-fts-gold-50 px-2 py-0.5 rounded ml-1">Wajib</span></label>
+          <input type="text" id="name" name="name" placeholder="Budi Santoso" required autocomplete="name" class="w-full px-4 py-4 bg-fts-cream border border-fts-cream-dark rounded-lg focus:outline-none focus:border-fts-green-900 focus:bg-white focus:ring-4 focus:ring-fts-green-900/10 transition-all">
+        </div>
+        <div>
+          <label for="store" class="block text-fts-green-900 font-bold text-sm mb-2">Nama & Jenis Restoran <span class="text-slate-400 text-xs ml-1">(Opsional)</span></label>
+          <input type="text" id="store" name="store" placeholder="Contoh: Warung Bahagia / Kafé Senja" class="w-full px-4 py-4 bg-fts-cream border border-fts-cream-dark rounded-lg focus:outline-none focus:border-fts-green-900 focus:bg-white focus:ring-4 focus:ring-fts-green-900/10 transition-all">
+        </div>
+        <div>
+          <label for="email" class="block text-fts-green-900 font-bold text-sm mb-2">Alamat Email <span class="text-fts-gold-700 text-xs bg-fts-gold-50 px-2 py-0.5 rounded ml-1">Wajib</span></label>
+          <input type="email" id="email" name="email" placeholder="anda@contoh.com" required autocomplete="email" class="w-full px-4 py-4 bg-fts-cream border border-fts-cream-dark rounded-lg focus:outline-none focus:border-fts-green-900 focus:bg-white focus:ring-4 focus:ring-fts-green-900/10 transition-all">
+        </div>
+        <div class="bg-fts-green-50 border border-fts-green-100 rounded-xl p-5 space-y-4">
+          <p class="text-fts-green-900 font-bold text-sm flex items-center gap-2">
+            <span class="text-fts-gold-400">🔍</span>
+            Untuk Analisis yang Lebih Akurat <span class="text-slate-400 font-normal text-xs">(Opsional)</span>
+          </p>
+          <p class="text-xs text-slate-500 -mt-2">Kalau Anda mengisi salah satunya, laporan AI akan jauh lebih spesifik untuk usaha Anda.</p>
+          <div>
+            <label for="store-url" class="block text-fts-green-900 font-bold text-xs mb-1.5">URL Website <span class="text-slate-400 ml-1">(Opsional)</span></label>
+            <input type="url" id="store-url" name="store-url" placeholder="https://restoran-anda.com" class="w-full px-3.5 py-3 bg-white border border-fts-cream-dark rounded-lg text-sm focus:outline-none focus:border-fts-green-900 focus:ring-4 focus:ring-fts-green-900/10 transition-all">
+          </div>
+          <div>
+            <label for="instagram-url" class="block text-fts-green-900 font-bold text-xs mb-1.5">URL Instagram <span class="text-slate-400 ml-1">(Opsional)</span></label>
+            <input type="url" id="instagram-url" name="instagram-url" placeholder="https://instagram.com/akun_anda" class="w-full px-3.5 py-3 bg-white border border-fts-cream-dark rounded-lg text-sm focus:outline-none focus:border-fts-green-900 focus:ring-4 focus:ring-fts-green-900/10 transition-all">
+          </div>
+          <div>
+            <label for="gmap-url" class="block text-fts-green-900 font-bold text-xs mb-1.5">URL Google Maps <span class="text-slate-400 ml-1">(Opsional)</span></label>
+            <input type="url" id="gmap-url" name="gmap-url" placeholder="https://maps.app.goo.gl/..." class="w-full px-3.5 py-3 bg-white border border-fts-cream-dark rounded-lg text-sm focus:outline-none focus:border-fts-green-900 focus:ring-4 focus:ring-fts-green-900/10 transition-all">
+          </div>
+        </div>
+        <div>
+          <label for="message" class="block text-fts-green-900 font-bold text-sm mb-2">Pesan Anda <span class="text-fts-gold-700 text-xs bg-fts-gold-50 px-2 py-0.5 rounded ml-1">Wajib</span></label>
+          <textarea id="message" name="message" rows="5" placeholder="Ceritakan sedikit tentang restoran Anda dan apa yang ingin dicapai.&#10;(Contoh: Mau buka cabang baru / Followers Instagram tidak naik / Lagi pertimbangkan ekspansi)" required class="w-full px-4 py-4 bg-fts-cream border border-fts-cream-dark rounded-lg focus:outline-none focus:border-fts-green-900 focus:bg-white focus:ring-4 focus:ring-fts-green-900/10 transition-all resize-y"></textarea>
+        </div>
+        <label class="flex items-start gap-3 text-sm text-slate-600">
+          <input type="checkbox" name="consent" required class="mt-1 w-5 h-5 accent-fts-green-900 shrink-0">
+          <span>Saya setuju dengan <a href="#" class="text-fts-green-900 underline">Kebijakan Privasi</a> dan bersedia dihubungi.</span>
+        </label>
+        <button type="submit" class="w-full bg-gradient-to-br from-fts-gold-400 via-fts-gold-500 to-fts-gold-400 text-fts-green-950 py-5 rounded-full font-black text-base md:text-lg shadow-gold hover:-translate-y-1 transition-all">
+          Cek Analisis Gratis →
+        </button>
+        <p class="text-center text-xs text-slate-500 leading-relaxed">
+          ✓ Kami balas dalam 1 hari kerja · ✓ Tanpa pemaksaan jualan<br>
+          ✓ Hanya tanya-tanya juga boleh · ✓ Sedang membandingkan? Tidak masalah · ✓ Online juga bisa
+        </p>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="text-center mt-10 text-white/90">
+      <p class="mb-3">💬 Hubungi kami via <strong class="text-fts-gold-400">WhatsApp</strong> atau lewat <strong class="text-fts-gold-400">form analisis gratis</strong> di atas.</p>
+      <p class="text-xs text-white/70">Analisis gratis · Online tersedia · Hanya tanya-tanya juga boleh · Tanpa pemaksaan</p>
+    </div>
+
+    <!-- Last Push -->
+    <div class="bg-white/10 backdrop-blur-md border-l-4 border-fts-gold-400 rounded-r-xl p-7 md:p-8 max-w-2xl mx-auto mt-10">
+      <p class="font-black text-fts-gold-400 mb-3">📌 Yang Anda dapatkan dari analisis gratis</p>
+      <ul class="space-y-2 text-sm text-white/90 leading-relaxed">
+        <li>① <strong>Laporan AI Pemasaran</strong> (audit Website, Instagram, dan Google Maps)</li>
+        <li>② <strong>Analisis 3 kompetitor</strong> di area Anda</li>
+        <li>③ <strong>Sesi konsultasi 60 menit</strong>, gratis (online tersedia)</li>
+      </ul>
+      <p class="text-xs text-white/70 mt-4 pt-4 border-t border-white/20">※ Kuota terbatas bulan ini. Daftar segera ya.</p>
+    </div>
+
+    <!-- Closing Message -->
+    <div class="max-w-3xl mx-auto mt-14 text-center">
+      <div class="inline-block">
+        <p class="text-white text-lg md:text-2xl font-black leading-relaxed mb-3">
+          Persiapan sebelum buka,<br>
+          <span class="text-fts-gold-400">menentukan hasilnya nanti.</span>
+        </p>
+        <p class="text-white/85 text-sm md:text-base leading-relaxed mb-8">
+          Cek posisi restoran Anda sekarang — gratis, 60 detik.
+        </p>
+        <a href="#" onclick="document.getElementById('name').focus(); return false;" class="inline-flex items-center gap-2 bg-gradient-to-br from-fts-gold-400 via-fts-gold-500 to-fts-gold-400 text-fts-green-950 px-9 py-5 rounded-full font-black text-base md:text-lg shadow-gold hover:-translate-y-1 transition-all animate-cta-pulse">
+          Cek Analisis Gratis
+          <span>→</span>
+        </a>
+        <p class="text-xs text-white/70 mt-4 font-bold">⏱ Hanya 60 detik · 100% Gratis · Tanpa pemaksaan</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="bg-fts-green-950 text-slate-300 py-14 text-center">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="font-serif text-2xl font-bold text-fts-gold-400 tracking-widest mb-2">F<span class="text-white">T</span>S</div>
+    <p class="text-xs text-slate-500 tracking-widest mb-6">PEMASARAN RESTORAN</p>
+    <div class="space-x-6 mb-6 text-sm">
+      <a href="#" class="hover:text-fts-gold-400 transition-colors">Kebijakan Privasi</a>
+      <a href="#" class="hover:text-fts-gold-400 transition-colors">Syarat & Ketentuan</a>
+      <a href="#" class="hover:text-fts-gold-400 transition-colors">Tentang Kami</a>
+      <a href="#" class="hover:text-fts-gold-400 transition-colors">Kontak</a>
+    </div>
+    <p class="text-xs text-slate-500">© FTS Restaurant Web. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ===== WhatsApp Always-Visible Float (Right Bottom Fixed) ===== -->
+<a href="https://wa.me/" target="_blank" rel="noopener" aria-label="Konsultasi via WhatsApp" class="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-[99] w-14 h-14 md:w-16 md:h-16 bg-[#25D366] hover:bg-[#1ebe5a] text-white rounded-full flex items-center justify-center shadow-2xl hover:-translate-y-1 transition-all animate-whatsapp-pulse group">
+  <span class="absolute inset-[-4px] rounded-full border-2 border-[#25D366] opacity-0 animate-[ripple_2.4s_ease-out_infinite] pointer-events-none"></span>
+  <span class="hidden lg:block absolute right-[76px] top-1/2 -translate-y-1/2 bg-fts-green-950 text-white px-4 py-2 rounded-full text-sm font-bold whitespace-nowrap shadow-lg pointer-events-none after:content-[''] after:absolute after:right-[-6px] after:top-1/2 after:-translate-y-1/2 after:border-[6px] after:border-transparent after:border-l-fts-green-950">Konsultasi via WhatsApp</span>
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<!-- ===== Sticky Mobile CTA Bar ===== -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 z-[98] bg-white/97 backdrop-blur-md border-t-2 border-fts-gold-400 shadow-2xl px-3 py-3">
+  <a href="#contact" class="block w-full bg-gradient-to-br from-fts-gold-400 via-fts-gold-500 to-fts-gold-400 text-fts-green-950 text-center py-4 rounded-full font-black text-base shadow-gold">
+    Cek Analisis Gratis →
+  </a>
+</div>
+<style>
+  @media (max-width: 768px) {
+    body { padding-bottom: 88px; }
+  }
+</style>
+
+</body>
+</html>

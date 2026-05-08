@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<!-- SEO -->
+<title>飲食店の集客方法｜オープン前から行列をつくるWeb戦略｜FTS</title>
+<meta name="description" content="飲食店・カフェ・レストランの集客に困っていませんか？Instagram集客・Googleマップ最適化・予約導線・多言語対応まで、オープン前から行列をつくるWeb戦略をFTSが提供。海外展開（インドネシア進出含む）にも対応。無料診断は60秒で完了。">
+<meta name="keywords" content="飲食店 集客 方法,カフェ 集客,レストラン 集客,Googleマップ 集客,飲食店 SNS集客,飲食店 Instagram,飲食店 Web制作,海外進出 飲食店,インドネシア 飲食店">
+<meta name="author" content="FTS">
+
+<!-- OGP -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="オープン前から"行列をつくる"飲食店のWeb戦略｜FTS">
+<meta property="og:description" content="Instagram × Google × Webを連動し、飲食店の集客を自動化。新規オープン・カフェ・レストラン向けの集客特化型Web戦略。">
+<meta property="og:locale" content="ja_JP">
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'fts-green': {
+            50: '#f3f8f5',
+            100: '#e8f3ee',
+            200: '#c5e0d2',
+            300: '#9ec6b3',
+            400: '#5a9c7c',
+            500: '#1a8466',
+            600: '#0f6b51',
+            700: '#0a5740',
+            800: '#0a4d3a',
+            900: '#073d2e',
+            950: '#061a13',
+          },
+          'fts-gold': {
+            50: '#faf4e3',
+            100: '#f5ecd5',
+            200: '#ecdba8',
+            300: '#e0c478',
+            400: '#d4af37',
+            500: '#c9a961',
+            600: '#b8932e',
+            700: '#a88a2e',
+            800: '#7d6722',
+          },
+          'fts-cream': '#faf8f3',
+          'fts-cream-dark': '#f5f1e8',
+        },
+        fontFamily: {
+          sans: ['"Noto Sans JP"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+          serif: ['"Cormorant Garamond"', '"Yu Mincho"', 'serif'],
+        },
+        boxShadow: {
+          'gold': '0 14px 38px rgba(201,169,97,0.42)',
+          'green': '0 8px 24px rgba(7,61,46,0.10)',
+          'green-lg': '0 20px 50px rgba(7,61,46,0.18)',
+        },
+        animation: {
+          'cta-pulse': 'ctaPulse 2.4s ease-in-out infinite',
+          'live-pulse': 'livePulse 1.4s ease-in-out infinite',
+          'whatsapp-pulse': 'whatsappPulse 2.4s ease-in-out infinite',
+        },
+      }
+    }
+  }
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+
+<!-- Custom Animations & Effects -->
+<style>
+  @keyframes ctaPulse {
+    0%, 100% { box-shadow: 0 14px 38px rgba(201,169,97,0.42); }
+    50% { box-shadow: 0 18px 50px rgba(212,175,55,0.65); }
+  }
+  @keyframes livePulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.85); }
+  }
+  @keyframes whatsappPulse {
+    0%, 100% { box-shadow: 0 10px 28px rgba(37,211,102,0.45); }
+    50% { box-shadow: 0 16px 40px rgba(37,211,102,0.7); }
+  }
+  @keyframes ripple {
+    0% { transform: scale(1); opacity: 0.6; }
+    100% { transform: scale(1.7); opacity: 0; }
+  }
+  @keyframes urgencySweep {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.85;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Safe headline rendering — prevent word-smashing layout bugs */
+  h1, h2, h3, h4 {
+    white-space: normal;
+    word-break: keep-all;
+    overflow-wrap: normal;
+    word-spacing: normal;
+    letter-spacing: normal;
+    hyphens: none;
+  }
+
+  .gold-underline {
+    position: relative;
+    display: inline-block;
+  }
+  .gold-underline::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 2px;
+    height: 6px;
+    background: #d4af37;
+    opacity: 0.28;
+    z-index: -1;
+  }
+
+  .urgency-sweep::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(212,175,55,0.18), transparent);
+    animation: urgencySweep 3s linear infinite;
+  }
+
+  details > summary { list-style: none; }
+  details > summary::-webkit-details-marker { display: none; }
+
+  html { scroll-behavior: smooth; }
+
+  /* Section label decoration */
+  .section-label::before { content: "—— "; color: #c9a961; }
+  .section-label::after { content: " ——"; color: #c9a961; }
+
+  /* Hide scrollbar for chip rows */
+  .scroll-hide::-webkit-scrollbar { display: none; }
+  .scroll-hide { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
+
+<!-- Structured Data: LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "FTS｜飲食店向けWeb集客サービス",
+  "description": "飲食店・カフェ・レストランの集客に特化したWeb戦略・制作・SNS運用・Googleマップ最適化サービス。新規オープン支援、海外進出（インドネシア）対応。",
+  "url": "https://example.com/restaurant-lp/",
+  "areaServed": ["JP", "ID"],
+  "serviceType": "飲食店向けWebマーケティング"
+}
+</script>
+</head>
+
+<body class="bg-white text-slate-800">
+
+<!-- ===== Header ===== -->
+<header class="sticky top-0 z-50 bg-white/92 backdrop-blur-md border-b border-fts-cream-dark">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <a href="#" class="flex items-center gap-3 no-underline">
+      <span class="font-serif text-2xl font-bold text-fts-green-900 tracking-widest">F<span class="text-fts-gold-400">T</span>S</span>
+      <span class="hidden md:inline-block text-[0.7rem] tracking-widest text-slate-500 font-bold border-l border-fts-cream-dark pl-3">RESTAURANT WEB</span>
+    </a>
+    <div class="flex items-center gap-3">
+      <span class="hidden lg:inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-fts-gold-50 border border-fts-gold-400 text-fts-gold-700 text-xs font-bold">
+        <span class="w-2 h-2 bg-fts-gold-400 rounded-full animate-live-pulse"></span>
+        受付枠に限りあり
+      </span>
+      <a href="#contact" class="bg-gradient-to-br from-fts-gold-400 to-fts-gold-500 text-fts-green-950 px-5 py-2.5 rounded-full font-black text-sm shadow-md hover:shadow-gold transition-all whitespace-nowrap">飲食店向け無料AI集客診断</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Urgency Bar ===== -->
+<div class="urgency-sweep relative bg-gradient-to-r from-fts-green-950 to-fts-green-900 text-white py-3 text-center text-sm font-bold border-b-2 border-fts-gold-400 overflow-hidden">
+  <div class="relative z-10 inline-flex items-center gap-3 flex-wrap justify-center px-4">
+    <span class="w-2.5 h-2.5 bg-red-500 rounded-full animate-live-pulse shadow-lg shadow-red-500/50"></span>
+    <span><span class="text-fts-gold-400 font-black">飲食店向け無料AI診断</span> 受付中</span>
+    <span class="hidden sm:inline-block w-px h-4 bg-white/30"></span>
+    <span class="hidden sm:inline">今月は受付枠に限りがあります</span>
+  </div>
+</div>
+
+<!-- ===== Hero ===== -->
+<section class="relative overflow-hidden bg-fts-cream py-20 md:py-28">
+  <div class="absolute inset-0 opacity-50" style="background-image: linear-gradient(rgba(15,107,81,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(15,107,81,0.05) 1px, transparent 1px); background-size: 56px 56px;"></div>
+  <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-br from-transparent to-fts-green-100/30 pointer-events-none"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-[1.05fr_1fr] gap-12 items-center">
+    <!-- Text -->
+    <div class="min-w-0">
+      <span class="inline-flex items-center gap-2 bg-gradient-to-br from-fts-green-900 to-fts-green-700 text-fts-gold-400 px-4 py-2 rounded-full text-xs font-bold tracking-wider mb-5 shadow-md">
+        ✦ FOR RESTAURANTS / CAFES / NEW OPENINGS
+      </span>
+
+      <h1 class="font-black text-fts-green-900 leading-tight mb-5 text-[2rem] md:text-[2.6rem] lg:text-[3.2rem]">
+        オープン前から<br>
+        <span class="gold-underline text-fts-gold-400">"行列をつくる"</span><br>
+        飲食店のWeb戦略
+      </h1>
+
+      <p class="text-fts-green-700 font-bold text-base md:text-lg mb-6 italic">
+        「"行列をつくる"仕組みは、オープン前から設計されています。」
+      </p>
+
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="inline-block bg-fts-green-50 text-fts-green-900 font-bold text-xs md:text-sm px-4 py-2 rounded-full border border-fts-green-200">
+          新規オープン・リニューアル・海外進出予定の飲食店向け
+        </span>
+        <span class="inline-block bg-fts-gold-50 text-fts-gold-700 font-bold text-xs md:text-sm px-4 py-2 rounded-full border border-fts-gold-400">
+          月商100万〜1,000万円規模の飲食店オーナー様向け
+        </span>
+      </div>
+
+      <h2 class="text-fts-green-700 font-bold text-lg md:text-xl mb-6">
+        Instagram × Google × Web を連動し、<br>"行列をつくる"集客を自動化する。
+      </h2>
+
+      <p class="text-slate-600 leading-loose mb-7">
+        飲食店・カフェ・レストランの集客に必要なのは、<strong class="text-fts-green-900">「見つけてもらう仕組み」</strong>と<strong class="text-fts-green-900">「行きたくなる動線」</strong>。<br>
+        FTSは Instagram集客・Googleマップ最適化・予約導線・多言語対応までを一気通貫で提供。海外進出（インドネシア）にも対応します。
+      </p>
+
+      <!-- Sub Message -->
+      <div class="bg-white border-l-4 border-fts-gold-400 px-6 py-5 mb-8 rounded-r-xl shadow-sm">
+        <p class="leading-relaxed">
+          オープン前の準備期間こそ、集客の差がつくタイミング。<br>
+          <strong class="text-fts-gold-400 font-black">"いつの間にか満席"の店舗には、明確な戦略があります。</strong>
+        </p>
+      </div>
+
+      <!-- Spots Counter -->
+      <div class="inline-flex items-center gap-3 bg-red-50 border-2 border-red-400 rounded-xl px-5 py-3 mb-7">
+        <span class="w-9 h-9 bg-red-500 text-white rounded-full flex items-center justify-center font-black animate-live-pulse">!</span>
+        <div class="text-left leading-tight">
+          <strong class="block text-red-700 font-black text-sm">飲食店向け 無料AI診断 受付中</strong>
+          <span class="text-slate-600 text-xs">今月は受付枠に限りがあります</span>
+        </div>
+      </div>
+
+      <!-- CTAs -->
+      <div class="space-y-3">
+        <div class="border-l-4 border-fts-gold-400 pl-4 py-1 space-y-1.5">
+          <p class="text-fts-green-900 font-bold text-base md:text-lg leading-relaxed">
+            今動いた店舗ほど、<span class="text-fts-gold-700">オープン後の集客が安定します。</span>
+          </p>
+          <p class="text-slate-600 text-sm md:text-base leading-relaxed">
+            オープン後に慌てる店舗と、準備している店舗では結果が大きく変わります。
+          </p>
+        </div>
+        <p class="text-sm text-slate-500 font-bold">⏱ 60秒で完了 / 完全無料 / 営業なし</p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="#contact" class="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-fts-gold-400 via-fts-gold-500 to-fts-gold-400 text-fts-green-950 px-8 py-5 rounded-full font-black text-lg shadow-gold hover:-translate-y-1 transition-all animate-cta-pulse">
+            飲食店向け無料AI集客診断
+            <span>→</span>
+          </a>
+          <a href="https://wa.me/" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-7 py-5 rounded-full font-bold shadow-lg hover:bg-[#1ebe5a] hover:-translate-y-0.5 transition-all">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            WhatsAppで相談
+          </a>
+        </div>
+        <p class="text-xs text-slate-500 pt-2">✓ 営業なし・相談だけOK　✓ ヒアリングのみでもOK　✓ 比較検討中の方も歓迎</p>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="flex flex-wrap gap-2 mt-8">
+        <span class="bg-white text-fts-green-900 text-xs font-bold px-4 py-2 rounded-full border border-fts-green-100 shadow-sm">飲食店支援多数</span>
+        <span class="bg-white text-fts-green-900 text-xs font-bold px-4 py-2 rounded-full border border-fts-green-100 shadow-sm">Instagram運用</span>
+        <span class="bg-white text-fts-green-900 text-xs font-bold px-4 py-2 rounded-full border border-fts-green-100 shadow-sm">Googleマップ最適化</span>
+        <span class="bg-white text-fts-green-900 text-xs font-bold px-4 py-2 rounded-full border border-fts-green-100 shadow-sm">多言語対応</span>
+        <span class="bg-white text-fts-green-900 text-xs font-bold px-4 py-2 rounded-full border border-fts-green-100 shadow-sm">海外進出対応</span>
+      </div>
+    </div>
+
+    <!-- Image -->
+    <div class="relative">
+      <div class="relative rounded-3xl overflow-hidden shadow-green-lg">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="満席の飲食店イメージ｜オープン前から行列をつくるWeb戦略" class="w-full h-[420px] md:h-[540px] object-cover">
+        <div class="absolute inset-0 bg-gradient-to-br from-fts-green-900/20 to-transparent"></div>
+
+        <!-- Floating Stat Card -->
+        <div class="absolute bottom-5 left-5 bg-white/95 backdrop-blur-md rounded-xl p-4 shadow-green-lg flex items-center gap-3 border border-fts-gold-100">
+          <div class="w-11 h-11 rounded-full bg-gradient-to-br from-fts-gold-400 to-fts-gold-500 flex items-center justify-center text-fts-green-950 font-black text-lg">↑</div>
+          <div>
+            <strong class="block text-fts-green-900 font-black text-sm">予約・問い合わせ増加</strong>
+            <span class="text-xs text-slate-500">飲食店向けWeb戦略</span>
+          </div>
+        </div>
+      </div>
+      <div class="hidden md:block absolute -bottom-7 -right-7 w-32 h-32 border-[3px] border-fts-gold-400 rounded-3xl -z-10"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Trust Logos / Categories ===== -->
+<section class="bg-fts-cream-dark py-12 border-y border-fts-cream-dark">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <p class="text-slate-500 text-xs tracking-widest font-bold mb-6">FTS が支援している飲食ジャンル</p>
+    <div class="flex flex-wrap justify-center gap-3">
+      <span class="bg-white text-fts-green-900 px-5 py-2.5 rounded-full border border-fts-cream-dark text-sm font-bold shadow-sm">レストラン</span>
+      <span class="bg-white text-fts-green-900 px-5 py-2.5 rounded-full border border-fts-cream-dark text-sm font-bold shadow-sm">カフェ</span>
+      <span class="bg-white text-fts-green-900 px-5 py-2.5 rounded-full border border-fts-cream-dark text-sm font-bold shadow-sm">居酒屋・バー</span>
+      <span class="bg-white text-fts-green-900 px-5 py-2.5 rounded-full border border-fts-cream-dark text-sm font-bold shadow-sm">ベーカリー</span>
+      <span class="bg-white text-fts-green-900 px-5 py-2.5 rounded-full border border-fts-cream-dark text-sm font-bold shadow-sm">ラーメン・うどん</span>
+      <span class="bg-white text-fts-green-900 px-5 py-2.5 rounded-full border border-fts-cream-dark text-sm font-bold shadow-sm">焼肉・寿司</span>
+      <span class="bg-white text-fts-green-900 px-5 py-2.5 rounded-full border border-fts-cream-dark text-sm font-bold shadow-sm">スイーツ</span>
+      <span class="bg-white text-fts-green-900 px-5 py-2.5 rounded-full border border-fts-cream-dark text-sm font-bold shadow-sm">海外進出（インドネシア等）</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Problems ===== -->
+<section class="bg-fts-green-50 py-24 md:py-32">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <span class="section-label inline-block text-fts-gold-400 font-serif italic tracking-widest text-sm font-semibold mb-3">PROBLEMS</span>
+      <h2 class="text-fts-green-900 font-black text-3xl md:text-4xl mb-5 leading-tight">
+        飲食店経営者の多くが、<br>
+        <span class="text-fts-gold-400">同じ集客の壁</span>にぶつかります。
+      </h2>
+      <p class="text-slate-600 leading-loose max-w-2xl mx-auto">
+        オープンしても、思うようにお客様が来ない——<br>
+        その原因は、店の魅力ではなく<strong>「届け方」</strong>にあります。
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+      <div class="bg-white border-l-4 border-fts-gold-400 rounded-xl p-6 shadow-sm flex items-start gap-4">
+        <span class="w-7 h-7 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center text-sm font-black shrink-0 mt-0.5">✓</span>
+        <p class="leading-relaxed">オープンしても、<strong class="text-fts-green-900">お客様が思ったほど来ない</strong></p>
+      </div>
+      <div class="bg-white border-l-4 border-fts-gold-400 rounded-xl p-6 shadow-sm flex items-start gap-4">
+        <span class="w-7 h-7 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center text-sm font-black shrink-0 mt-0.5">✓</span>
+        <p class="leading-relaxed">SNSはやっているが、<strong class="text-fts-green-900">集客につながっていない</strong></p>
+      </div>
+      <div class="bg-white border-l-4 border-fts-gold-400 rounded-xl p-6 shadow-sm flex items-start gap-4">
+        <span class="w-7 h-7 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center text-sm font-black shrink-0 mt-0.5">✓</span>
+        <p class="leading-relaxed"><strong class="text-fts-green-900">Googleマップ対策</strong>ができていない・存在感が薄い</p>
+      </div>
+      <div class="bg-white border-l-4 border-fts-gold-400 rounded-xl p-6 shadow-sm flex items-start gap-4">
+        <span class="w-7 h-7 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center text-sm font-black shrink-0 mt-0.5">✓</span>
+        <p class="leading-relaxed">Instagram投稿しても<strong class="text-fts-green-900">フォロワーや来店に繋がらない</strong></p>
+      </div>
+      <div class="bg-white border-l-4 border-fts-gold-400 rounded-xl p-6 shadow-sm flex items-start gap-4">
+        <span class="w-7 h-7 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center text-sm font-black shrink-0 mt-0.5">✓</span>
+        <p class="leading-relaxed">予約・問い合わせの<strong class="text-fts-green-900">導線が整っていない</strong></p>
+      </div>
+      <div class="bg-white border-l-4 border-fts-gold-400 rounded-xl p-6 shadow-sm flex items-start gap-4">
+        <span class="w-7 h-7 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center text-sm font-black shrink-0 mt-0.5">✓</span>
+        <p class="leading-relaxed"><strong class="text-fts-green-900">外国人観光客</strong>を取り込めていない（多言語未対応）</p>
+      </div>
+    </div>
+
+    <div class="bg-white border-2 border-fts-gold-400 rounded-2xl p-8 max-w-3xl mx-auto mt-10 text-center shadow-sm">
+      <p class="text-fts-green-900 leading-loose">
+        ひとつでも当てはまるなら、<strong class="text-fts-gold-400 font-black">それは"店の問題"ではなく"届け方の問題"です。</strong><br>
+        正しい設計に変えれば、集客は仕組みで動き始めます。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Solutions ===== -->
+<section class="bg-white py-24 md:py-32">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <span class="section-label inline-block text-fts-gold-400 font-serif italic tracking-widest text-sm font-semibold mb-3">SOLUTIONS</span>
+      <h2 class="text-fts-green-900 font-black text-3xl md:text-4xl mb-5 leading-tight">
+        FTSが提供する、<br>
+        <span class="text-fts-gold-400">"行列をつくる"4つの解決策</span>
+      </h2>
+      <p class="text-slate-600 leading-loose max-w-2xl mx-auto">
+        Web・SNS・地図・予約のすべてを連動させ、<br>
+        来店までの導線を一気通貫で設計します。
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Solution 1 -->
+      <div class="bg-fts-cream rounded-2xl p-8 shadow-sm hover:shadow-green-lg hover:-translate-y-1 transition-all border-t-4 border-fts-green-900">
+        <div class="font-serif italic text-5xl text-fts-gold-400 leading-none mb-4">01</div>
+        <h3 class="text-fts-green-900 font-black text-lg mb-3">Instagram導線設計</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">"映える写真"だけで終わらせず、来店・予約に繋がる投稿設計とプロフィール導線を構築。</p>
+      </div>
+      <!-- Solution 2 -->
+      <div class="bg-fts-cream rounded-2xl p-8 shadow-sm hover:shadow-green-lg hover:-translate-y-1 transition-all border-t-4 border-fts-green-900">
+        <div class="font-serif italic text-5xl text-fts-gold-400 leading-none mb-4">02</div>
+        <h3 class="text-fts-green-900 font-black text-lg mb-3">Googleマップ最適化</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">「地域名 × 業態」で表示される店に。MEO対策・口コミ管理・写真最適化まで一括対応。</p>
+      </div>
+      <!-- Solution 3 -->
+      <div class="bg-fts-cream rounded-2xl p-8 shadow-sm hover:shadow-green-lg hover:-translate-y-1 transition-all border-t-4 border-fts-green-900">
+        <div class="font-serif italic text-5xl text-fts-gold-400 leading-none mb-4">03</div>
+        <h3 class="text-fts-green-900 font-black text-lg mb-3">予約導線構築</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">サイト・Googleマップ・SNS・LINEから予約までストレスなく辿り着ける導線を設計。</p>
+      </div>
+      <!-- Solution 4 -->
+      <div class="bg-fts-cream rounded-2xl p-8 shadow-sm hover:shadow-green-lg hover:-translate-y-1 transition-all border-t-4 border-fts-green-900">
+        <div class="font-serif italic text-5xl text-fts-gold-400 leading-none mb-4">04</div>
+        <h3 class="text-fts-green-900 font-black text-lg mb-3">多言語対応（外国人向け）</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">英語・インドネシア語など多言語対応で、訪日外国人・海外進出に対応した集客を実現。</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="#contact" class="inline-flex items-center gap-2 bg-gradient-to-br from-fts-gold-400 via-fts-gold-500 to-fts-gold-400 text-fts-green-950 px-10 py-5 rounded-full font-black text-lg shadow-gold hover:-translate-y-1 transition-all animate-cta-pulse">
+        飲食店向け無料AI集客診断
+        <span>→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Services ===== -->
+<section class="bg-fts-green-50 py-24 md:py-32">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <span class="section-label inline-block text-fts-gold-400 font-serif italic tracking-widest text-sm font-semibold mb-3">SERVICES</span>
+      <h2 class="text-fts-green-900 font-black text-3xl md:text-4xl mb-5 leading-tight">
+        飲食店専門の <span class="text-fts-gold-400">4つのサービス</span>
+      </h2>
+
+      <div class="max-w-3xl mx-auto bg-white border-2 border-fts-gold-400 rounded-2xl p-6 md:p-7 shadow-sm">
+        <p class="text-fts-green-900 font-black text-base md:text-lg leading-relaxed">
+          私たちは <span class="line-through text-slate-400 font-medium">"ホームページ制作会社"</span> ではなく、<br>
+          <span class="text-fts-gold-400 text-xl md:text-2xl">"集客をつくる会社"</span> です。
+        </p>
+        <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+          サイトを"作る"ことが目的ではなく、お客様が"集まる仕組み"をつくることが私たちの仕事です。
+        </p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-green-lg transition-all flex gap-5 items-start">
+        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-fts-gold-400 to-fts-gold-500 text-fts-green-950 flex items-center justify-center font-serif font-black text-xl shrink-0 shadow-md">Ⅰ</div>
+        <div>
+          <h3 class="text-fts-green-900 font-black text-lg mb-2">飲食店向けWeb制作</h3>
+          <p class="text-fts-gold-700 font-bold text-sm mb-2">"行きたくなる" 店舗サイトを設計。</p>
+          <p class="text-slate-600 text-sm leading-relaxed">メニュー・雰囲気・予約までを最短ルートで伝える、飲食店特化のサイトを制作。スマホ最適化・写真最適化を標準対応。</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-green-lg transition-all flex gap-5 items-start">
+        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-fts-gold-400 to-fts-gold-500 text-fts-green-950 flex items-center justify-center font-serif font-black text-xl shrink-0 shadow-md">Ⅱ</div>
+        <div>
+          <h3 class="text-fts-green-900 font-black text-lg mb-2">SEO対策（地域＋業態）</h3>
+          <p class="text-fts-gold-700 font-bold text-sm mb-2">"地域 × 業態" で1ページ目を狙う。</p>
+          <p class="text-slate-600 text-sm leading-relaxed">「渋谷 ランチ カフェ」など、お客様が実際に検索するキーワードで上位表示を狙う集客SEOを実施。</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-green-lg transition-all flex gap-5 items-start">
+        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-fts-gold-400 to-fts-gold-500 text-fts-green-950 flex items-center justify-center font-serif font-black text-xl shrink-0 shadow-md">Ⅲ</div>
+        <div>
+          <h3 class="text-fts-green-900 font-black text-lg mb-2">SNS運用（Instagram中心）</h3>
+          <p class="text-fts-gold-700 font-bold text-sm mb-2">"見られる" から "行きたい" へ。</p>
+          <p class="text-slate-600 text-sm leading-relaxed">投稿企画・撮影ディレクション・ハッシュタグ設計まで、来店につながるInstagram運用を支援します。</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-green-lg transition-all flex gap-5 items-start">
+        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-fts-gold-400 to-fts-gold-500 text-fts-green-950 flex items-center justify-center font-serif font-black text-xl shrink-0 shadow-md">Ⅳ</div>
+        <div>
+          <h3 class="text-fts-green-900 font-black text-lg mb-2">AI集客導入</h3>
+          <p class="text-fts-gold-700 font-bold text-sm mb-2">データで判断する飲食店経営へ。</p>
+          <p class="text-slate-600 text-sm leading-relaxed">AIによる競合分析・キーワード設計・改善提案で、勘ではなくデータ基盤の集客運用を実現します。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Process ===== -->
+<section class="bg-white py-24 md:py-32">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <span class="section-label inline-block text-fts-gold-400 font-serif italic tracking-widest text-sm font-semibold mb-3">PROCESS</span>
+      <h2 class="text-fts-green-900 font-black text-3xl md:text-4xl mb-5 leading-tight">
+        "行列をつくる" <span class="text-fts-gold-400">5ステップ</span>
+      </h2>
+      <p class="text-slate-600 leading-loose">オープン前の準備から運用改善まで、一貫してサポートします。</p>
+    </div>
+
+    <div class="space-y-4">
+      <div class="bg-fts-cream rounded-2xl p-7 shadow-sm flex items-center gap-6 hover:translate-x-1 transition-all">
+        <div class="w-16 h-16 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center font-serif font-black text-lg shrink-0">01</div>
+        <div>
+          <h3 class="text-fts-green-900 font-black mb-1">ヒアリング <span class="text-xs text-fts-gold-700 font-bold ml-2">30〜60分・オンラインOK</span></h3>
+          <p class="text-slate-600 text-sm">業態・コンセプト・ターゲット・課題をお聞きします。</p>
+        </div>
+      </div>
+      <div class="bg-fts-cream rounded-2xl p-7 shadow-sm flex items-center gap-6 hover:translate-x-1 transition-all">
+        <div class="w-16 h-16 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center font-serif font-black text-lg shrink-0">02</div>
+        <div>
+          <h3 class="text-fts-green-900 font-black mb-1">集客設計 <span class="text-xs text-fts-gold-700 font-bold ml-2">5営業日以内</span></h3>
+          <p class="text-slate-600 text-sm">AI分析と業界知見で、Web・SNS・地図の連動戦略をご提案。</p>
+        </div>
+      </div>
+      <div class="bg-fts-cream rounded-2xl p-7 shadow-sm flex items-center gap-6 hover:translate-x-1 transition-all">
+        <div class="w-16 h-16 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center font-serif font-black text-lg shrink-0">03</div>
+        <div>
+          <h3 class="text-fts-green-900 font-black mb-1">制作 <span class="text-xs text-fts-gold-700 font-bold ml-2">2〜4週間</span></h3>
+          <p class="text-slate-600 text-sm">サイト・Googleマップ・SNSアカウントを集客導線として整備。</p>
+        </div>
+      </div>
+      <div class="bg-fts-cream rounded-2xl p-7 shadow-sm flex items-center gap-6 hover:translate-x-1 transition-all">
+        <div class="w-16 h-16 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center font-serif font-black text-lg shrink-0">04</div>
+        <div>
+          <h3 class="text-fts-green-900 font-black mb-1">集客開始</h3>
+          <p class="text-slate-600 text-sm">公開後、Web・SNS・地図を連動させた集客を稼働させます。</p>
+        </div>
+      </div>
+      <div class="bg-fts-cream rounded-2xl p-7 shadow-sm flex items-center gap-6 hover:translate-x-1 transition-all">
+        <div class="w-16 h-16 rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center font-serif font-black text-lg shrink-0">05</div>
+        <div>
+          <h3 class="text-fts-green-900 font-black mb-1">改善運用 <span class="text-xs text-fts-gold-700 font-bold ml-2">運用プラン</span></h3>
+          <p class="text-slate-600 text-sm">月次レポート＋改善提案で、集客の仕組みを育てていきます。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Case Studies ===== -->
+<section class="bg-fts-green-50 py-24 md:py-32">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <span class="section-label inline-block text-fts-gold-400 font-serif italic tracking-widest text-sm font-semibold mb-3">CASE STUDIES</span>
+      <h2 class="text-fts-green-900 font-black text-3xl md:text-4xl mb-5 leading-tight">
+        飲食店の <span class="text-fts-gold-400">集客モデルケース</span>
+      </h2>
+      <p class="text-slate-600 leading-loose max-w-xl mx-auto">FTSの戦略を導入された飲食店のモデルケースをご紹介します。</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Case 1 -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-green-lg hover:-translate-y-1 transition-all">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="新規オープンカフェのモデルケース" class="w-full h-48 object-cover">
+        <div class="p-7">
+          <span class="inline-block bg-fts-green-900 text-fts-gold-400 px-3 py-1 rounded-full text-xs font-bold tracking-wide mb-4">新規オープン / カフェ</span>
+          <p class="text-fts-gold-700 text-xs font-black tracking-wider mb-1">CHALLENGE</p>
+          <p class="text-slate-700 text-sm mb-3">オープン直後の認知ゼロ・予約導線がない</p>
+          <p class="text-fts-gold-700 text-xs font-black tracking-wider mb-1">APPROACH</p>
+          <p class="text-slate-700 text-sm mb-3">Instagram戦略 + Googleマップ立ち上げ + 予約導線整備</p>
+          <p class="text-fts-gold-700 text-xs font-black tracking-wider mb-1">RESULT</p>
+          <p class="bg-gradient-to-br from-fts-green-900 to-fts-green-700 text-white px-4 py-3 rounded-lg font-bold text-sm">オープン前から予約が入り、初週末は<span class="text-fts-gold-400">満席に</span></p>
+          <p class="text-xs text-slate-500 mt-3 leading-relaxed">※本事例はモデルケースです。</p>
+        </div>
+      </div>
+      <!-- Case 2 -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-green-lg hover:-translate-y-1 transition-all">
+        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=800&q=80" alt="既存レストランの再集客モデルケース" class="w-full h-48 object-cover">
+        <div class="p-7">
+          <span class="inline-block bg-fts-green-900 text-fts-gold-400 px-3 py-1 rounded-full text-xs font-bold tracking-wide mb-4">既存店 / レストラン</span>
+          <p class="text-fts-gold-700 text-xs font-black tracking-wider mb-1">CHALLENGE</p>
+          <p class="text-slate-700 text-sm mb-3">SNS発信していてもフォロワー・来店が伸びない</p>
+          <p class="text-fts-gold-700 text-xs font-black tracking-wider mb-1">APPROACH</p>
+          <p class="text-slate-700 text-sm mb-3">投稿コンセプト再設計 + 来店導線改善 + MEO強化</p>
+          <p class="text-fts-gold-700 text-xs font-black tracking-wider mb-1">RESULT</p>
+          <p class="bg-gradient-to-br from-fts-green-900 to-fts-green-700 text-white px-4 py-3 rounded-lg font-bold text-sm">Instagramフォロワーが<span class="text-fts-gold-400">大幅に増加</span>、来店にも好影響</p>
+          <p class="text-xs text-slate-500 mt-3 leading-relaxed">※本事例はモデルケースです。</p>
+        </div>
+      </div>
+      <!-- Case 3 -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-green-lg hover:-translate-y-1 transition-all">
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" alt="海外進出飲食店のモデルケース" class="w-full h-48 object-cover">
+        <div class="p-7">
+          <span class="inline-block bg-fts-green-900 text-fts-gold-400 px-3 py-1 rounded-full text-xs font-bold tracking-wide mb-4">海外進出 / インドネシア</span>
+          <p class="text-fts-gold-700 text-xs font-black tracking-wider mb-1">CHALLENGE</p>
+          <p class="text-slate-700 text-sm mb-3">海外進出オープン時の現地での認知ゼロ</p>
+          <p class="text-fts-gold-700 text-xs font-black tracking-wider mb-1">APPROACH</p>
+          <p class="text-slate-700 text-sm mb-3">多言語サイト + 現地SNS戦略 + Googleマップ整備</p>
+          <p class="text-fts-gold-700 text-xs font-black tracking-wider mb-1">RESULT</p>
+          <p class="bg-gradient-to-br from-fts-green-900 to-fts-green-700 text-white px-4 py-3 rounded-lg font-bold text-sm">オープン初月から<span class="text-fts-gold-400">現地集客が安定</span></p>
+          <p class="text-xs text-slate-500 mt-3 leading-relaxed">※本事例はモデルケースです。</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center text-xs text-slate-500 mt-8 leading-relaxed bg-fts-cream-dark border border-fts-cream-dark rounded-xl px-6 py-4 max-w-2xl mx-auto">
+      ※本LP内のモデルケースは一例であり、成果を保証するものではありません。<br>実際の成果は業態・立地・運用方針により異なります。
+    </p>
+  </div>
+</section>
+
+<!-- ===== Free Diagnosis Promo ===== -->
+<section class="bg-white py-24 md:py-32">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-10">
+      <span class="section-label inline-block text-fts-gold-400 font-serif italic tracking-widest text-sm font-semibold mb-3">FREE DIAGNOSIS</span>
+      <h2 class="text-fts-green-900 font-black text-3xl md:text-4xl mb-5 leading-tight">
+        60秒で完了。<br>
+        <span class="text-fts-gold-400">飲食店向け 無料AI集客診断。</span>
+      </h2>
+      <p class="text-slate-600 leading-loose max-w-2xl mx-auto">
+        現状のWeb・SNS・Googleマップを総合的にAIで分析し、<strong class="text-fts-green-900">改善ポイントをまとめたレポート</strong>を1営業日以内にお届けします。
+      </p>
+    </div>
+
+    <div class="bg-gradient-to-br from-fts-gold-50 via-white to-fts-gold-50 border-2 border-dashed border-fts-gold-400 rounded-2xl p-8 md:p-10">
+      <div class="grid md:grid-cols-3 gap-6 mb-8">
+        <div class="text-center">
+          <div class="w-14 h-14 mx-auto rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center font-serif font-black text-lg mb-3">①</div>
+          <h4 class="text-fts-green-900 font-black mb-2 text-sm">Web診断</h4>
+          <p class="text-slate-600 text-xs">サイト・予約導線の現状チェック</p>
+        </div>
+        <div class="text-center">
+          <div class="w-14 h-14 mx-auto rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center font-serif font-black text-lg mb-3">②</div>
+          <h4 class="text-fts-green-900 font-black mb-2 text-sm">SNS / MEO診断</h4>
+          <p class="text-slate-600 text-xs">Instagram・Googleマップの活用度</p>
+        </div>
+        <div class="text-center">
+          <div class="w-14 h-14 mx-auto rounded-full bg-fts-green-900 text-fts-gold-400 flex items-center justify-center font-serif font-black text-lg mb-3">③</div>
+          <h4 class="text-fts-green-900 font-black mb-2 text-sm">改善提案レポート</h4>
+          <p class="text-slate-600 text-xs">優先度つき改善アクションを提示</p>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a href="#contact" class="inline-flex items-center gap-2 bg-gradient-to-br from-fts-gold-400 via-fts-gold-500 to-fts-gold-400 text-fts-green-950 px-10 py-5 rounded-full font-black text-lg shadow-gold hover:-translate-y-1 transition-all animate-cta-pulse">
+          無料診断を受ける（60秒）
+          <span>→</span>
+        </a>
+        <p class="text-xs text-slate-500 mt-4 font-bold">⏱ 60秒で完了 / 完全無料 / 営業なし</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Final CTA Section with Form ===== -->
+<section id="contact" class="relative bg-gradient-to-br from-fts-green-900 to-fts-green-700 text-white py-28 md:py-32 overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(circle at 18% 28%, rgba(212,175,55,0.16), transparent 42%), radial-gradient(circle at 82% 72%, rgba(212,175,55,0.13), transparent 42%);"></div>
+
+  <div class="relative max-w-4xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <span class="section-label inline-block text-fts-gold-400 font-serif italic tracking-widest text-sm font-semibold mb-3">CONTACT</span>
+      <h2 class="text-white font-black text-3xl md:text-4xl mb-6 leading-tight">
+        飲食店の集客、<br>
+        <span class="text-fts-gold-400">プロと一緒に始めませんか？</span>
+      </h2>
+      <p class="text-white/90 leading-loose max-w-2xl mx-auto">
+        オープン前から動き出すほど、集客はラクになります。<br>
+        まずは現状の把握から。<strong class="text-fts-gold-400">完全無料・60秒</strong>で無料診断を受けてください。
+      </p>
+    </div>
+
+    <!-- Risk Reversal Cards -->
+    <div class="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto mb-12">
+      <div class="bg-white/10 backdrop-blur-md border border-fts-gold-400/30 rounded-xl p-5 flex items-start gap-3">
+        <span class="text-fts-gold-400 text-2xl leading-none mt-0.5">✓</span>
+        <div>
+          <strong class="block text-fts-gold-400 font-black text-sm mb-1">営業なし・相談だけOK</strong>
+          <span class="text-white/80 text-xs leading-relaxed">しつこい連絡は一切ありません。</span>
+        </div>
+      </div>
+      <div class="bg-white/10 backdrop-blur-md border border-fts-gold-400/30 rounded-xl p-5 flex items-start gap-3">
+        <span class="text-fts-gold-400 text-2xl leading-none mt-0.5">✓</span>
+        <div>
+          <strong class="block text-fts-gold-400 font-black text-sm mb-1">ヒアリングのみでもOK</strong>
+          <span class="text-white/80 text-xs leading-relaxed">「話を聞いてみたい」だけでも歓迎します。</span>
+        </div>
+      </div>
+      <div class="bg-white/10 backdrop-blur-md border border-fts-gold-400/30 rounded-xl p-5 flex items-start gap-3">
+        <span class="text-fts-gold-400 text-2xl leading-none mt-0.5">✓</span>
+        <div>
+          <strong class="block text-fts-gold-400 font-black text-sm mb-1">比較検討中の方も歓迎</strong>
+          <span class="text-white/80 text-xs leading-relaxed">他社との比較相談も気軽にどうぞ。</span>
+        </div>
+      </div>
+      <div class="bg-white/10 backdrop-blur-md border border-fts-gold-400/30 rounded-xl p-5 flex items-start gap-3">
+        <span class="text-fts-gold-400 text-2xl leading-none mt-0.5">✓</span>
+        <div>
+          <strong class="block text-fts-gold-400 font-black text-sm mb-1">海外進出にも対応</strong>
+          <span class="text-white/80 text-xs leading-relaxed">インドネシア等への進出計画もご相談OK。</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="bg-white text-slate-800 rounded-3xl p-8 md:p-12 max-w-2xl mx-auto shadow-2xl border-t-8 border-fts-gold-400">
+      <h3 class="text-fts-green-900 font-black text-xl md:text-2xl text-center mb-2">60秒で完了｜無料診断フォーム</h3>
+      <p class="text-center text-slate-500 text-sm mb-7">必要事項をご記入のうえ送信ください。1営業日以内にAI診断レポートをお届けします。</p>
+      <p class="text-center mb-7">
+        <span class="inline-block bg-fts-gold-50 border border-fts-gold-400 text-fts-gold-700 text-xs font-black rounded-full px-3 py-1.5">⏱ 今月は受付枠に限りがあります</span>
+      </p>
+
+      <form action="#" method="post" novalidate class="space-y-5">
+        <div>
+          <label for="name" class="block text-fts-green-900 font-bold text-sm mb-2">お名前 <span class="text-fts-gold-700 text-xs bg-fts-gold-50 px-2 py-0.5 rounded ml-1">必須</span></label>
+          <input type="text" id="name" name="name" placeholder="山田 太郎" required autocomplete="name" class="w-full px-4 py-4 bg-fts-cream border border-fts-cream-dark rounded-lg focus:outline-none focus:border-fts-green-900 focus:bg-white focus:ring-4 focus:ring-fts-green-900/10 transition-all">
+        </div>
+        <div>
+          <label for="store" class="block text-fts-green-900 font-bold text-sm mb-2">店舗名・業態 <span class="text-slate-400 text-xs ml-1">（任意）</span></label>
+          <input type="text" id="store" name="store" placeholder="例: ◯◯カフェ / イタリアンレストラン" class="w-full px-4 py-4 bg-fts-cream border border-fts-cream-dark rounded-lg focus:outline-none focus:border-fts-green-900 focus:bg-white focus:ring-4 focus:ring-fts-green-900/10 transition-all">
+        </div>
+        <div>
+          <label for="email" class="block text-fts-green-900 font-bold text-sm mb-2">メールアドレス <span class="text-fts-gold-700 text-xs bg-fts-gold-50 px-2 py-0.5 rounded ml-1">必須</span></label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="email" class="w-full px-4 py-4 bg-fts-cream border border-fts-cream-dark rounded-lg focus:outline-none focus:border-fts-green-900 focus:bg-white focus:ring-4 focus:ring-fts-green-900/10 transition-all">
+        </div>
+        <div class="bg-fts-green-50 border border-fts-green-100 rounded-xl p-5 space-y-4">
+          <p class="text-fts-green-900 font-bold text-sm flex items-center gap-2">
+            <span class="text-fts-gold-400">🔍</span>
+            診断精度を上げるために（任意）
+          </p>
+          <p class="text-xs text-slate-500 -mt-2">いずれかをご記入いただくと、より具体的なAI診断レポートをお届けできます。</p>
+          <div>
+            <label for="store-url" class="block text-fts-green-900 font-bold text-xs mb-1.5">店舗URL <span class="text-slate-400 ml-1">（任意）</span></label>
+            <input type="url" id="store-url" name="store-url" placeholder="https://your-restaurant.com" class="w-full px-3.5 py-3 bg-white border border-fts-cream-dark rounded-lg text-sm focus:outline-none focus:border-fts-green-900 focus:ring-4 focus:ring-fts-green-900/10 transition-all">
+          </div>
+          <div>
+            <label for="instagram-url" class="block text-fts-green-900 font-bold text-xs mb-1.5">Instagram URL <span class="text-slate-400 ml-1">（任意）</span></label>
+            <input type="url" id="instagram-url" name="instagram-url" placeholder="https://instagram.com/your_account" class="w-full px-3.5 py-3 bg-white border border-fts-cream-dark rounded-lg text-sm focus:outline-none focus:border-fts-green-900 focus:ring-4 focus:ring-fts-green-900/10 transition-all">
+          </div>
+          <div>
+            <label for="gmap-url" class="block text-fts-green-900 font-bold text-xs mb-1.5">Google Map URL <span class="text-slate-400 ml-1">（任意）</span></label>
+            <input type="url" id="gmap-url" name="gmap-url" placeholder="https://maps.app.goo.gl/..." class="w-full px-3.5 py-3 bg-white border border-fts-cream-dark rounded-lg text-sm focus:outline-none focus:border-fts-green-900 focus:ring-4 focus:ring-fts-green-900/10 transition-all">
+          </div>
+        </div>
+        <div>
+          <label for="message" class="block text-fts-green-900 font-bold text-sm mb-2">ご相談内容 <span class="text-fts-gold-700 text-xs bg-fts-gold-50 px-2 py-0.5 rounded ml-1">必須</span></label>
+          <textarea id="message" name="message" rows="5" placeholder="現状のお悩みやご相談内容を自由にご記入ください。&#10;（例：オープン予定／既存店のSNSが伸びない／海外展開を検討中 等）" required class="w-full px-4 py-4 bg-fts-cream border border-fts-cream-dark rounded-lg focus:outline-none focus:border-fts-green-900 focus:bg-white focus:ring-4 focus:ring-fts-green-900/10 transition-all resize-y"></textarea>
+        </div>
+        <label class="flex items-start gap-3 text-sm text-slate-600">
+          <input type="checkbox" name="consent" required class="mt-1 w-5 h-5 accent-fts-green-900 shrink-0">
+          <span><a href="#" class="text-fts-green-900 underline">プライバシーポリシー</a>に同意のうえ送信します。</span>
+        </label>
+        <button type="submit" class="w-full bg-gradient-to-br from-fts-gold-400 via-fts-gold-500 to-fts-gold-400 text-fts-green-950 py-5 rounded-full font-black text-lg shadow-gold hover:-translate-y-1 transition-all">
+          飲食店向け無料AI集客診断 →
+        </button>
+        <p class="text-center text-xs text-slate-500 leading-relaxed">
+          ✓ 送信後、1営業日以内にご返信　✓ 営業なし・相談だけOK<br>
+          ✓ ヒアリングのみでもOK　✓ 比較検討中の方も歓迎　✓ オンライン対応可
+        </p>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="text-center mt-10 text-white/90">
+      <p class="mb-3">💬 お問い合わせは <strong class="text-fts-gold-400">WhatsApp</strong> または <strong class="text-fts-gold-400">無料診断フォーム</strong> よりお願いいたします。</p>
+      <p class="text-xs text-white/70">相談無料 / オンライン対応可 / ヒアリングのみでもOK / 強引な営業は一切行いません</p>
+    </div>
+
+    <!-- Last Push -->
+    <div class="bg-white/10 backdrop-blur-md border-l-4 border-fts-gold-400 rounded-r-xl p-7 md:p-8 max-w-2xl mx-auto mt-10">
+      <p class="font-black text-fts-gold-400 mb-3">📌 無料診断のお申込み特典</p>
+      <ul class="space-y-2 text-sm text-white/90 leading-relaxed">
+        <li>① <strong>AI集客レポート</strong>（Web・SNS・MEO総合診断）</li>
+        <li>② <strong>競合飲食店3店舗のAI分析レポート</strong></li>
+        <li>③ <strong>初回相談60分が完全無料</strong>（オンライン対応可）</li>
+      </ul>
+      <p class="text-xs text-white/70 mt-4 pt-4 border-t border-white/20">※ 今月は受付枠に限りがあります。お早めにお申込みください。</p>
+    </div>
+
+    <!-- 最終クロージングメッセージ -->
+    <div class="max-w-3xl mx-auto mt-14 text-center">
+      <div class="inline-block">
+        <p class="text-white text-lg md:text-2xl font-black leading-loose mb-3">
+          オープン前から準備するかどうかで、<br>
+          <span class="text-fts-gold-400">結果は大きく変わります。</span>
+        </p>
+        <p class="text-white/85 text-sm md:text-base leading-relaxed mb-8">
+          まずは無料診断で、現状を確認してください。
+        </p>
+        <a href="#" onclick="document.getElementById('name').focus(); return false;" class="inline-flex items-center gap-2 bg-gradient-to-br from-fts-gold-400 via-fts-gold-500 to-fts-gold-400 text-fts-green-950 px-9 py-5 rounded-full font-black text-base md:text-lg shadow-gold hover:-translate-y-1 transition-all animate-cta-pulse">
+          飲食店向け無料AI集客診断
+          <span>→</span>
+        </a>
+        <p class="text-xs text-white/70 mt-4 font-bold">⏱ 60秒で完了 / 完全無料 / 営業なし</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="bg-fts-green-950 text-slate-300 py-14 text-center">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="font-serif text-2xl font-bold text-fts-gold-400 tracking-widest mb-2">F<span class="text-white">T</span>S</div>
+    <p class="text-xs text-slate-500 tracking-widest mb-6">RESTAURANT WEB MARKETING</p>
+    <div class="space-x-6 mb-6 text-sm">
+      <a href="#" class="hover:text-fts-gold-400 transition-colors">プライバシーポリシー</a>
+      <a href="#" class="hover:text-fts-gold-400 transition-colors">特定商取引法表記</a>
+      <a href="#" class="hover:text-fts-gold-400 transition-colors">利用規約</a>
+      <a href="#" class="hover:text-fts-gold-400 transition-colors">会社情報</a>
+    </div>
+    <p class="text-xs text-slate-500">© FTS Restaurant Web. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ===== WhatsApp Always-Visible Float (Right Bottom Fixed) ===== -->
+<a href="https://wa.me/" target="_blank" rel="noopener" aria-label="WhatsAppで相談" class="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-[99] w-14 h-14 md:w-16 md:h-16 bg-[#25D366] hover:bg-[#1ebe5a] text-white rounded-full flex items-center justify-center shadow-2xl hover:-translate-y-1 transition-all animate-whatsapp-pulse group">
+  <span class="absolute inset-[-4px] rounded-full border-2 border-[#25D366] opacity-0 animate-[ripple_2.4s_ease-out_infinite] pointer-events-none"></span>
+  <span class="hidden lg:block absolute right-[76px] top-1/2 -translate-y-1/2 bg-fts-green-950 text-white px-4 py-2 rounded-full text-sm font-bold whitespace-nowrap shadow-lg pointer-events-none after:content-[''] after:absolute after:right-[-6px] after:top-1/2 after:-translate-y-1/2 after:border-[6px] after:border-transparent after:border-l-fts-green-950">WhatsAppで相談</span>
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<!-- ===== Sticky Mobile CTA Bar ===== -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 z-[98] bg-white/97 backdrop-blur-md border-t-2 border-fts-gold-400 shadow-2xl px-3 py-3">
+  <a href="#contact" class="block w-full bg-gradient-to-br from-fts-gold-400 via-fts-gold-500 to-fts-gold-400 text-fts-green-950 text-center py-4 rounded-full font-black text-base shadow-gold">
+    飲食店向け無料AI集客診断 →
+  </a>
+</div>
+<style>
+  @media (max-width: 768px) {
+    body { padding-bottom: 88px; }
+  }
+</style>
+
+</body>
+</html>
